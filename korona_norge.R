@@ -26,4 +26,4 @@ df3 <- df2 %>%
   filter(fylke %in% c("vestland", "viken"))
 
 ggplot(df3, aes(date, cumsum, col=fylke)) +
-  geom_line()
+  geom_line() + geom_point()

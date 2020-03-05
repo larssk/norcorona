@@ -8,23 +8,39 @@
 #
 
 library(shiny)
+library(shinythemes)
 
 # Define UI for application that draws a histogram
-shinyUI(fluidPage(
-
-    # Application title
-    titlePanel("Norway Corona Stats"),
-
-    # Sidebar with a slider input for number of bins
-    sidebarLayout(
-        sidebarPanel(
-            checkboxInput("show_cum", "Kumulativ", value = TRUE, width = NULL), 
-            checkboxInput("show_daily", "Daglig", value = TRUE, width = NULL)
-        ),
-
-        # Show a plot of the generated distribution
-        mainPanel(
-            plotOutput("distPlot")
+shinyUI(
+    fluidPage(
+        
+        # theme
+        theme = shinytheme("united"),
+        
+        # Application title
+        titlePanel("Norway Corona Stats"),
+        
+        fluidRow(
+            column(6,
+                   plotOutput("norgePlot")
+            ),
+            column(6,
+                   plotOutput("fylkePlot")
+            )
+            
+        ), 
+        
+        fluidRow(
+            column(3,
+                   wellPanel(
+                       checkboxGroupInput("checkGroup", 
+                                          h3("Checkbox group"), 
+                                          choices = list("Kumulativ" = "show_cum", 
+                                                         "Daglig" = "show_daily"),
+                                          selected = c("show_cum", "show_daily")
+                       )
+                   ) 
+            )
         )
     )
-))
+)
