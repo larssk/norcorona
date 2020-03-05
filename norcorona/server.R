@@ -8,13 +8,24 @@
 #
 
 library(shiny)
+library(readr)
 library(ggplot2)
 library(lubridate)
 library(tibble)
 library(dplyr)
+library(tidyr)
+library(DT)
 
 # Define server logic required to draw a histogram
 shinyServer(function(input, output) {
+    output$norge = DT::renderDataTable({
+        df <- read_csv("data/norge.csv") %>%
+            mutate(cumsum = cumsum(daily))
+    })
+
+    output$fylke = DT::renderDataTable({
+        df <- read_csv("data/fylke.csv")
+    })
     
     output$norgePlot <- renderPlot({
         

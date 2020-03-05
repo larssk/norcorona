@@ -9,6 +9,7 @@
 
 library(shiny)
 library(shinythemes)
+library(DT)
 
 # Define UI for application that draws a histogram
 shinyUI(
@@ -21,26 +22,32 @@ shinyUI(
         titlePanel("Norway Corona Stats"),
         
         fluidRow(
-            column(6,
-                   plotOutput("norgePlot")
-            ),
-            column(6,
-                   plotOutput("fylkePlot")
-            )
-            
-        ), 
-        
-        fluidRow(
-            column(3,
+            column(2,
                    wellPanel(
                        checkboxGroupInput("checkGroup", 
-                                          h3("Checkbox group"), 
+                                          "Hæ?",
                                           choices = list("Kumulativ" = "show_cum", 
                                                          "Daglig" = "show_daily"),
                                           selected = c("show_cum", "show_daily")
                        )
-                   ) 
+                   )
+            ),
+            column(5,
+                   plotOutput("norgePlot")
+            ),
+            column(5,
+                   plotOutput("fylkePlot")
             )
+        ),
+        fluidRow(
+            column(2),
+            column(4,
+                DT::dataTableOutput("norge")
+            ),
+            column(4,
+                   DT::dataTableOutput("fylke")
+            )
+            
         )
     )
 )
