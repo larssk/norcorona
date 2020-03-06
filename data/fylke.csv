@@ -1,4 +1,11 @@
-date,agder,innlandet,more,oslo,rogaland,telemark,troms,trondelag,vestland,viken
-2020-03-03,3,NA,NA,7,NA,NA,2,NA,12,8
-2020-03-04,3,3,1,11,3,NA,2,1,17,15
-2020-03-05,5,4,2,18,3,2,2,7,22,21
+date,norge,agder,innlandet,more,norland,oslo,rogaland,telemark,troms,trondelag,vestland,viken
+2020-02-26,  1,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+2020-02-27,  4,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+2020-02-28,  6,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+2020-02-29, 15,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+2020-03-01, 19,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+2020-03-02, 25,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+2020-03-03, 33, 3, 0, 0, 0, 7, 1, 0, 2, 0,12, 8
+2020-03-04, 56, 3, 3, 1, 0,11, 3, 0, 2, 1,17,15
+2020-03-05, 86, 5, 4, 2, 0,18, 3, 2, 2, 7,22,21
+2020-03-06,113, 5, 6, 2, 0,23,10, 2, 6,11,23,25

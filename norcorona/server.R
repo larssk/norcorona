@@ -18,33 +18,75 @@ library(DT)
 
 # Define server logic required to draw a histogram
 shinyServer(function(input, output) {
-    output$norge = DT::renderDataTable({
-        df <- read_csv("data/norge.csv") %>%
-            mutate(cumsum = cumsum(daily))
+    
+    fetch_data <- reactive({
+        df <- read_csv("./data/fylke.csv") %>% 
+            pivot_longer(cols = -date, names_to = "fylke", values_to = "cumsum") %>%
+            group_split(fylke)
+        
+        df <- lapply(
+            df, function(x) {
+                x$daily = abs(diff(c(x$cumsum[1]*2, x$cumsum)))
+                return(x)
+            }
+        )
+        
+        df <- bind_rows(df)
+        return(df)
+        
     })
 
-    output$fylke = DT::renderDataTable({
-        df <- read_csv("data/fylke.csv")
+    filter_norge <- reactive({
+        df <- fetch_data()
+        df <- df %>%
+            filter(fylke == "norge")
+        return(df)
     })
     
+    filter_fylker <- reactive({
+        df <- fetch_data()
+        df <- df %>%
+            filter(fylke != "norge")
+        return(df)
+    })
+    
+    output$norgeTable = DT::renderDataTable({
+        df <- fetch_data()
+        
+        df <- df %>% 
+            select(-daily) %>%
+            pivot_wider(
+                names_from = c(fylke), 
+                values_from = c(cumsum)
+            ) %>%
+            arrange(desc(date))
+        
+        return(df)
+    })
+
     output$norgePlot <- renderPlot({
         
-        df <- read_csv("data/norge.csv") %>%
-            mutate(cumsum = cumsum(daily))
+        df_norge  <- filter_norge()
+        df_fylker <- filter_fylker()
         
-        p <- ggplot(df)
+        p <- ggplot()
         
-        
-        if ("show_daily" %in% input$checkGroup) {
-            p <- p + geom_col(mapping = aes(date, daily), fill=2)
-        }
-        
-        if ("show_cum" %in% input$checkGroup) {
+        if("fylker" %in% input$checkGroup) {
             p <- p + 
-                geom_point(mapping = aes(date, cumsum)) + 
-                geom_line(mapping = aes(date, cumsum))
+                geom_col(data = df_fylker, mapping = aes(date, cumsum, fill=fylke)) +
+                scale_fill_brewer(type="qual", palette = "Set3")
         }
         
+        if("norge" %in% input$checkGroup) {
+            p <- p + 
+                geom_point(data = df_norge, mapping = aes(date, cumsum)) + 
+                geom_line(data = df_norge, mapping = aes(date, cumsum)) 
+            
+            if(!"fylker" %in% input$checkGroup) {
+                p <- p + geom_col(data = df_norge, aes(date, daily), fill=2)
+            }
+
+        }
         p <- p + xlab("Dato") + ylab("Antall smittede")
         
         p <- p + theme(axis.text=element_text(size=16),
@@ -53,26 +95,5 @@ shinyServer(function(input, output) {
         
     })
     
-    output$fylkePlot <- renderPlot({
-        
-        df <- read_csv("data/fylke.csv")
-        
-        df2 <- pivot_longer(df, cols = -date, names_to = "fylke", values_to = "cumsum")
-        
-        df3 <- df2 %>%
-            filter(fylke %in% c("vestland", "viken", "oslo"))
-        
-        p <- ggplot(df3, aes(date, cumsum, col=fylke)) +
-            geom_line() + geom_point()
-        
-        p <- p + xlab("Dato") + ylab("Antall smittede")
-        p <- p + theme(axis.text=element_text(size=16),
-                       axis.title=element_text(size=16, face="bold"), 
-                       legend.text = element_text(size=14),
-                       legend.position="top") +
-            labs(col="")
-        p
-        
-    })
-    
+
 })

@@ -22,32 +22,25 @@ shinyUI(
         titlePanel("Norway Corona Stats"),
         
         fluidRow(
-            column(2,
+            column(3,
                    wellPanel(
                        checkboxGroupInput("checkGroup", 
                                           "Hæ?",
-                                          choices = list("Kumulativ" = "show_cum", 
-                                                         "Daglig" = "show_daily"),
-                                          selected = c("show_cum", "show_daily")
+                                          choices = list("Fylker" = "fylker", 
+                                                         "Totalt" = "norge"),
+                                          selected = c("norge")
                        )
                    )
             ),
-            column(5,
+            column(9,
                    plotOutput("norgePlot")
-            ),
-            column(5,
-                   plotOutput("fylkePlot")
             )
         ),
         fluidRow(
-            column(2),
-            column(4,
-                DT::dataTableOutput("norge")
-            ),
-            column(4,
-                   DT::dataTableOutput("fylke")
+            column(12,
+                DT::dataTableOutput("norgeTable")
             )
-            
+
         )
     )
 )
