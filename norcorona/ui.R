@@ -11,6 +11,20 @@ library(shiny)
 library(shinythemes)
 library(DT)
 
+fylke_name = list(
+    "Agder" = "agder", 
+    "Innlandet" = "innlandet", 
+    "Møre og Romsdal" = "more", 
+    "Norland" = "norland", 
+    "Oslo" = "oslo", 
+    "Rogaland" = "rogaland", 
+    "Telemark og Vestfold" = "telemark", 
+    "Troms og Finnmark" = "troms", 
+    "Trøndelag" = "trondelag",
+    "Vestland" = "vestland", 
+    "Viken" = "viken"
+)
+
 # Define UI for application that draws a histogram
 shinyUI(
     fluidPage(
@@ -24,12 +38,20 @@ shinyUI(
         fluidRow(
             column(3,
                    wellPanel(
-                       checkboxGroupInput("checkGroup", 
-                                          "Hæ?",
-                                          choices = list("Fylker" = "fylker", 
-                                                         "Totalt" = "norge"),
-                                          selected = c("norge")
-                       )
+                       selectInput(
+                           'input_fylke', 'Velg fylke', fylke_name, multiple=TRUE, selectize=TRUE
+                           ),
+                       selectInput(
+                           'input_bars', 'Stolpene', list("Daglig" = "daglig", 
+                                                          "Per fylke" = "fylker"), 
+                           selected = "daglig"
+                                                          
+                       ),
+                       checkboxInput(
+                           "input_cumulative", 'Kumulativ', value = TRUE
+                       ), 
+                       
+                       
                    )
             ),
             column(9,
@@ -38,7 +60,7 @@ shinyUI(
         ),
         fluidRow(
             column(12,
-                DT::dataTableOutput("norgeTable")
+                DT::dataTableOutput("fullTable")
             )
 
         )

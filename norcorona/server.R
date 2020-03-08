@@ -50,7 +50,7 @@ shinyServer(function(input, output) {
         return(df)
     })
     
-    output$norgeTable = DT::renderDataTable({
+    compile_table <- reactive({
         df <- fetch_data()
         
         df <- df %>% 
@@ -59,10 +59,18 @@ shinyServer(function(input, output) {
                 names_from = c(fylke), 
                 values_from = c(cumsum)
             ) %>%
-            arrange(desc(date))
-        
+            arrange(desc(date)) %>%
+            select(date, norge, everything())
+
         return(df)
     })
+
+    output$fullTable = DT::renderDataTable({
+        compile_table()
+    },
+    rownames = FALSE,
+    options = list()
+    )
 
     output$norgePlot <- renderPlot({
         
@@ -71,21 +79,33 @@ shinyServer(function(input, output) {
         
         p <- ggplot()
         
-        if("fylker" %in% input$checkGroup) {
-            p <- p + 
-                geom_col(data = df_fylker, mapping = aes(date, cumsum, fill=fylke)) +
-                scale_fill_brewer(type="qual", palette = "Set3")
-        }
-        
-        if("norge" %in% input$checkGroup) {
-            p <- p + 
-                geom_point(data = df_norge, mapping = aes(date, cumsum)) + 
-                geom_line(data = df_norge, mapping = aes(date, cumsum)) 
+        if( length(input$input_fylke) == 0 ) {
             
-            if(!"fylker" %in% input$checkGroup) {
+            if("fylker" %in% input$input_bars) {
+                p <- p + 
+                    geom_col(data = df_fylker, mapping = aes(date, cumsum, fill=fylke)) +
+                    scale_fill_brewer(type="qual", palette = "Set3")
+            }
+            if("daglig" %in% input$input_bars) {
                 p <- p + geom_col(data = df_norge, aes(date, daily), fill=2)
             }
-
+            
+            if(input$input_cumulative) {
+                p <- p + 
+                    geom_point(data = df_norge, mapping = aes(date, cumsum)) + 
+                    geom_line(data = df_norge, mapping = aes(date, cumsum)) 
+            }
+            
+        }
+        else {
+            df <- df_fylker %>%
+                filter(fylke %in% input$input_fylke)
+            
+            p <- ggplot()
+            p <- p + 
+                geom_point(data = df, mapping = aes(date, cumsum, col=fylke)) + 
+                geom_line(data = df, mapping = aes(date, cumsum, col=fylke)) 
+            
         }
         p <- p + xlab("Dato") + ylab("Antall smittede")
         
