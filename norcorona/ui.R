@@ -39,18 +39,15 @@ shinyUI(
             column(3,
                    wellPanel(
                        selectInput(
-                           'input_fylke', 'Velg fylke', fylke_name, multiple=TRUE, selectize=TRUE
-                           ),
-                       selectInput(
-                           'input_bars', 'Stolpene', list("Daglig" = "daglig", 
-                                                          "Per fylke" = "fylker"), 
-                           selected = "daglig"
-                                                          
+                           'input_fylke', 'Fylke(r)', fylke_name, multiple=TRUE, selectize=TRUE
                        ),
-                       checkboxInput(
-                           "input_cumulative", 'Kumulativ', value = TRUE
-                       ), 
-                       
+                       selectInput(
+                           'input_style', 'Visualisering', 
+                           list("Daglige smittede" = "daily", "Kumulativt" = "cumulative", "Stable fylker" = "stack_cols"),
+                           selected = c("daily", "cumulative"),
+                           multiple=TRUE, selectize=TRUE
+                       )
+
                        
                    )
             ),

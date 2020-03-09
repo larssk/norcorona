@@ -69,48 +69,88 @@ shinyServer(function(input, output) {
         compile_table()
     },
     rownames = FALSE,
-    options = list()
+    options = list(dom = 't'), 
+    colnames = c('Dato', 'Norge', 'Agder', 'Innlandet', 'Møre og Romsdal', 'Norland', 
+                 'Oslo', 'Rogaland', 'Vestfold og Telemark', 'Troms og Finnmark', 'Trøndelag', 
+                 'Vestland', 'Viken')
     )
-
+    
     output$norgePlot <- renderPlot({
         
         df_norge  <- filter_norge()
         df_fylker <- filter_fylker()
         
+        # Filter dataframe on selection
+        if( length(input$input_fylke) > 0 ) {
+            df_fylker <- df_fylker %>%
+                filter(fylke %in% input$input_fylke) %>%
+                drop_na(cumsum)
+        }
+        
         p <- ggplot()
         
+        # Plot totals of entire Norway
         if( length(input$input_fylke) == 0 ) {
             
-            if("fylker" %in% input$input_bars) {
+            # Column for daily incidents
+            if("daily" %in% input$input_style) {
                 p <- p + 
-                    geom_col(data = df_fylker, mapping = aes(date, cumsum, fill=fylke)) +
-                    scale_fill_brewer(type="qual", palette = "Set3")
-            }
-            if("daglig" %in% input$input_bars) {
-                p <- p + geom_col(data = df_norge, aes(date, daily), fill=2)
+                    geom_col(data = df_norge, aes(date, daily), fill=2)
             }
             
-            if(input$input_cumulative) {
+            # Stack by county
+            if("stack_cols" %in% input$input_style) {
                 p <- p + 
-                    geom_point(data = df_norge, mapping = aes(date, cumsum)) + 
-                    geom_line(data = df_norge, mapping = aes(date, cumsum)) 
+                    geom_col(data = df_fylker, mapping = aes(date, cumsum, fill=fylke)) +
+                    scale_fill_brewer("", type="qual", palette = "Set3")
+            }
+            
+            if("cumulative" %in% input$input_style) {
+                p <- p + 
+                    geom_point(data = df_norge, mapping = aes(date, cumsum, size=cumsum)) + 
+                    geom_line(data = df_norge, mapping = aes(date, cumsum)) +
+                    guides(size=FALSE)
+                    #scale_size_continuous("")
             }
             
         }
         else {
-            df <- df_fylker %>%
-                filter(fylke %in% input$input_fylke)
             
-            p <- ggplot()
-            p <- p + 
-                geom_point(data = df, mapping = aes(date, cumsum, col=fylke)) + 
-                geom_line(data = df, mapping = aes(date, cumsum, col=fylke)) 
+            if("daily" %in% input$input_style) {
+                if("stack_cols" %in% input$input_style) {
+                    position = "stack"
+                }
+                else {
+                    position = "dodge2"
+                }
+
+                p <- p + 
+                    geom_col(data = df_fylker, mapping = aes(date, daily, fill=fylke), col="black", position = position)
+            }
+
+            if("cumulative" %in% input$input_style) {
+                p <- p + 
+                    geom_line(data = df_fylker, mapping = aes(date, cumsum, col=fylke)) +
+                    geom_point(data = df_fylker, mapping = aes(date, cumsum, fill=fylke, size=cumsum), col="black", pch=21) + 
+                    guides(size=FALSE)
+                    
+            }
+            
+            p <- p +
+                scale_fill_brewer("", type="qual", palette = "Set3") + 
+                scale_color_brewer("", type="qual", palette = "Set3")
             
         }
         p <- p + xlab("Dato") + ylab("Antall smittede")
         
-        p <- p + theme(axis.text=element_text(size=16),
-              axis.title=element_text(size=16, face="bold"))
+        p <- p + 
+            theme_dark() + 
+            theme(
+                axis.text=element_text(size=16),
+                axis.title=element_text(size=16, face="bold"), 
+                legend.text = element_text(size=19)
+            ) + 
+            theme(legend.position="top")
         p
         
     })
