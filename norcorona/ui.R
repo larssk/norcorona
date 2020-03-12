@@ -14,16 +14,33 @@ library(DT)
 fylke_name = list(
     "Agder" = "agder", 
     "Innlandet" = "innlandet", 
-    "Møre og Romsdal" = "more", 
+    "Møre og Romsdal" = "møre", 
     "Norland" = "norland", 
     "Oslo" = "oslo", 
     "Rogaland" = "rogaland", 
-    "Telemark og Vestfold" = "telemark", 
+    "Vestfold og Telemark" = "vestfold", 
     "Troms og Finnmark" = "troms", 
     "Trøndelag" = "trondelag",
     "Vestland" = "vestland", 
     "Viken" = "viken"
 )
+
+fylke_name = list(
+    "Agder" = "Agder", 
+    "Innlandet" = "Innlandet", 
+    "Møre og Romsdal" = "Møre og Romsdal", 
+    "Nordland" = "Nordland", 
+    "Oslo" = "Oslo", 
+    "Rogaland" = "Rogaland", 
+    "Vestfold og Telemark" = "Vestfold og Telemark", 
+    "Troms og Finnmark" = "Troms og Finnmark", 
+    "Trøndelag" = "Trøndelag",
+    "Vestland" = "Vestland", 
+    "Viken" = "Viken", 
+    "Svalbard" = "Svalbard"
+)
+
+
 
 # Define UI for application that draws a histogram
 shinyUI(

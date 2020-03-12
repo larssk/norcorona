@@ -15,52 +15,100 @@ library(tibble)
 library(dplyr)
 library(tidyr)
 library(DT)
+library(curl)
+library(jsonlite)
+
 
 # Define server logic required to draw a histogram
 shinyServer(function(input, output) {
     
     fetch_data <- reactive({
-        df <- read_csv("./data/fylke.csv") %>% 
-            pivot_longer(cols = -date, names_to = "fylke", values_to = "cumsum") %>%
-            group_split(fylke)
+        #df <- read_csv("./data/vg.csv")
+        #return(df)
         
-        df <- lapply(
-            df, function(x) {
-                x$daily = abs(diff(c(x$cumsum[1]*2, x$cumsum)))
-                return(x)
-            }
-        )
+        con <- curl_fetch_memory("https://www.vg.no/spesial/2020/corona-viruset/data/norway-allCases/")
+        all_cases <- jsonlite::fromJSON(rawToChar(con$content))
         
-        df <- bind_rows(df)
+        dates <- names(all_cases)
+        for(i in 1:length(all_cases)) {
+            all_cases[[i]]$date = dates[i]
+        }
+
+        df <- as_tibble(bind_rows(all_cases))
+        
+        df <- df %>%
+            mutate(municipality = str_remove(municipality, '"')) %>%
+            mutate(date = ymd(date)) %>%
+            mutate(date = ymd(confirmed))
+        
+        # returns a dataframe with a row per case
         return(df)
         
     })
 
-    filter_norge <- reactive({
+    time_series_county <- reactive({
+
         df <- fetch_data()
-        df <- df %>%
-            filter(fylke == "norge")
+        print(df)        
+        
+        by_date_region <- df %>%
+            group_by(date, county) %>%
+            tally() %>%
+            rename(daily=n) %>%
+            arrange(county, date)
+
+        splt <- by_date_region %>%
+            group_by(county) %>%
+            group_split(county)
+
+        splt <- lapply(splt, function(x) {
+            x$cumsum = cumsum(x$daily)
+            return(x)
+        })
+
+        df <- bind_rows(splt)
+        
+        print(table(df$county))
         return(df)
+                
     })
     
-    filter_fylker <- reactive({
-        df <- fetch_data()
-        df <- df %>%
-            filter(fylke != "norge")
-        return(df)
-    })
-    
-    compile_table <- reactive({
+    time_series_totals <- reactive({
+        
         df <- fetch_data()
         
-        df <- df %>% 
-            select(-daily) %>%
-            pivot_wider(
-                names_from = c(fylke), 
-                values_from = c(cumsum)
-            ) %>%
+        by_date <- df %>%
+            group_by(date) %>%
+            tally() %>%
+            rename(daily=n) %>%
+            mutate(cumsum = cumsum(daily))
+        
+        
+        return(by_date)
+    })
+
+
+    
+    compile_table <- reactive({
+        df_county <- time_series_county() %>%
+            select(-daily) %>% 
             arrange(desc(date)) %>%
-            select(date, norge, everything())
+            pivot_wider(
+                names_from = c(county), 
+                values_from = c(cumsum)
+            )
+        
+        df_totals <- time_series_totals() %>%
+            select(-daily) %>%
+            rename(totals = cumsum)
+        
+        df <- left_join(df_totals, df_county, by="date") %>%
+            arrange(desc(date)) %>%
+            select(date, totals, Agder, Innlandet, `Møre og Romsdal`, Nordland, 
+                   Oslo, Rogaland, `Vestfold og Telemark`, `Troms og Finnmark`, 
+                   `Trøndelag`, Vestland, Viken)
+            
+        
 
         return(df)
     })
@@ -70,21 +118,27 @@ shinyServer(function(input, output) {
     },
     rownames = FALSE,
     options = list(dom = 't'), 
-    colnames = c('Dato', 'Norge', 'Agder', 'Innlandet', 'Møre og Romsdal', 'Norland', 
+    colnames = c('Dato', 'Totalt', 'Agder', 'Innlandet', 'Møre og Romsdal', 'Norland', 
                  'Oslo', 'Rogaland', 'Vestfold og Telemark', 'Troms og Finnmark', 'Trøndelag', 
                  'Vestland', 'Viken')
     )
     
     output$norgePlot <- renderPlot({
         
-        df_norge  <- filter_norge()
-        df_fylker <- filter_fylker()
+        df_norge  <- time_series_totals()
+        df_fylker <- time_series_county()
+        
+        #print(df_norge)
+        print(table(df_fylker$county))
         
         # Filter dataframe on selection
         if( length(input$input_fylke) > 0 ) {
+            print(input$input_fylke)
+            
             df_fylker <- df_fylker %>%
-                filter(fylke %in% input$input_fylke) %>%
+                filter(county %in% input$input_fylke) %>%
                 drop_na(cumsum)
+            
         }
         
         p <- ggplot()
@@ -101,7 +155,7 @@ shinyServer(function(input, output) {
             # Stack by county
             if("stack_cols" %in% input$input_style) {
                 p <- p + 
-                    geom_col(data = df_fylker, mapping = aes(date, cumsum, fill=fylke)) +
+                    geom_col(data = df_fylker, mapping = aes(date, cumsum, fill=county)) +
                     scale_fill_brewer("", type="qual", palette = "Set3")
             }
             
@@ -125,13 +179,13 @@ shinyServer(function(input, output) {
                 }
 
                 p <- p + 
-                    geom_col(data = df_fylker, mapping = aes(date, daily, fill=fylke), col="black", position = position)
+                    geom_col(data = df_fylker, mapping = aes(date, daily, fill=county), col="black", position = position)
             }
 
             if("cumulative" %in% input$input_style) {
                 p <- p + 
-                    geom_line(data = df_fylker, mapping = aes(date, cumsum, col=fylke)) +
-                    geom_point(data = df_fylker, mapping = aes(date, cumsum, fill=fylke, size=cumsum), col="black", pch=21) + 
+                    geom_line(data = df_fylker, mapping = aes(date, cumsum, col=county)) +
+                    geom_point(data = df_fylker, mapping = aes(date, cumsum, fill=county, size=cumsum), col="black", pch=21) + 
                     guides(size=FALSE)
                     
             }
@@ -141,14 +195,17 @@ shinyServer(function(input, output) {
                 scale_color_brewer("", type="qual", palette = "Set3")
             
         }
-        p <- p + xlab("Dato") + ylab("Antall smittede")
+        p <- p + xlab("Dato") + ylab("Antall smittede") +
+            scale_x_date(date_breaks = "days" , date_labels = "%d.%b")
         
         p <- p + 
             theme_dark() + 
             theme(
                 axis.text=element_text(size=16),
                 axis.title=element_text(size=16, face="bold"), 
-                legend.text = element_text(size=19)
+                legend.text = element_text(size=19),
+                axis.text.x = element_text(angle = 35, hjust = 1, vjust = .9, size=12)
+                
             ) + 
             theme(legend.position="top")
         p
