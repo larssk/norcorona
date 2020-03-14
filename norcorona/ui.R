@@ -11,19 +11,6 @@ library(shiny)
 library(shinythemes)
 library(DT)
 
-fylke_name = list(
-    "Agder" = "agder", 
-    "Innlandet" = "innlandet", 
-    "Møre og Romsdal" = "møre", 
-    "Norland" = "norland", 
-    "Oslo" = "oslo", 
-    "Rogaland" = "rogaland", 
-    "Vestfold og Telemark" = "vestfold", 
-    "Troms og Finnmark" = "troms", 
-    "Trøndelag" = "trondelag",
-    "Vestland" = "vestland", 
-    "Viken" = "viken"
-)
 
 fylke_name = list(
     "Agder" = "Agder", 
@@ -76,7 +63,16 @@ shinyUI(
             column(12,
                 DT::dataTableOutput("fullTable")
             )
-
+        ), 
+        fluidRow(
+            column(12,
+                   DT::dataTableOutput("tableSummaryCounty")
+            )
+        ),
+        fluidRow(
+            column(12,
+                   DT::dataTableOutput("tableSummaryMunicipality")
+            )
         )
     )
 )

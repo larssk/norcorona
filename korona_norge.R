@@ -166,7 +166,8 @@ df_county %>%
   pivot_wider(
     names_from = c(county), 
     values_from = c(cumsum)
-)
+) %>%
+  fill(-date)
   
 df <- left_join(df_totals, df_county, by="date")    
 df
