@@ -1,13 +1,25 @@
-county,population,short
-Agder,307231,agder
-Innlandet,371385,innlandet
-Møre og Romsdal,265238,møre
-Nordland,241235,nordland
-Oslo,693494,oslo
-Rogaland,479892,rogaland
-Svalbard,0,svalbard
-Troms og Finnmark,243311,troms
-Trøndelag,468702,trøndelag
-Vestfold og Telemark,419396,vestfold
-Vestland,636531,vestland
-Viken,1241165,viken
+county_raw,sex,population,county_code,county
+30 Viken,Menn,623445,30,Viken
+30 Viken,Kvinner,617720,30,Viken
+03 Oslo,Menn,346184,03,Oslo
+03 Oslo,Kvinner,347310,03,Oslo
+34 Innlandet,Menn,186319,34,Innlandet
+34 Innlandet,Kvinner,185066,34,Innlandet
+38 Vestfold og Telemark,Menn,209895,38,Vestfold og Telemark
+38 Vestfold og Telemark,Kvinner,209501,38,Vestfold og Telemark
+42 Agder,Menn,154656,42,Agder
+42 Agder,Kvinner,152575,42,Agder
+11 Rogaland,Menn,243572,11,Rogaland
+11 Rogaland,Kvinner,236320,11,Rogaland
+46 Vestland,Menn,322614,46,Vestland
+46 Vestland,Kvinner,313917,46,Vestland
+15 Møre og Romsdal,Menn,135213,15,Møre og Romsdal
+15 Møre og Romsdal,Kvinner,130025,15,Møre og Romsdal
+50 Trøndelag - Trööndelage,Menn,238103,50,Trøndelag
+50 Trøndelag - Trööndelage,Kvinner,230599,50,Trøndelag
+18 Nordland,Menn,122432,18,Nordland
+18 Nordland,Kvinner,118803,18,Nordland
+54 Troms og Finnmark - Romsa ja Finnmárku,Menn,124129,54,Troms og Finnmark
+54 Troms og Finnmark - Romsa ja Finnmárku,Kvinner,119182,54,Troms og Finnmark
+21 Svalbard,Menn,0,21,Svalbard
+21 Svalbard,Kvinner,0,21,Svalbard
