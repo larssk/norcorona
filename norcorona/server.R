@@ -17,15 +17,14 @@ library(tidyr)
 library(DT)
 library(curl)
 library(jsonlite)
-
+library(shinydashboard)
+library(stringr)
 
 # Define server logic required to draw a histogram
 shinyServer(function(input, output) {
     
     fetch_data <- reactive({
-        #df <- read_csv("./data/vg.csv")
-        #return(df)
-        
+                
         con <- curl_fetch_memory("https://www.vg.no/spesial/2020/corona-viruset/data/norway-allCases/")
         all_cases <- jsonlite::fromJSON(rawToChar(con$content))
         
@@ -46,10 +45,58 @@ shinyServer(function(input, output) {
         
     })
 
+    fetch_data_overview <- reactive({
+        con <- curl_fetch_memory("https://www.vg.no/spesial/2020/corona-viruset/data/norway-table-overview/")
+        overall <- jsonlite::fromJSON(rawToChar(con$content))
+
+        return(
+            overall$totals
+        )
+        
+        ## $confirmed, $dead, $recovered
+    })
+    
+    totals_by_county <- reactive({
+        df <- fetch_data()
+        
+        infected <- df %>%
+            group_by(county) %>%
+            tally() %>%
+            rename(n_infected = n)
+
+        diseased <- df %>%
+            drop_na(dead) %>%
+            group_by(county) %>%
+            tally() %>%
+            rename(n_dead = n)
+        
+        out <- left_join(infected, diseased, by="county")
+        return(out)
+        
+    })
+
+    totals_by_municipality <- reactive({
+        df <- fetch_data()
+        
+        infected <- df %>%
+            group_by(municipality) %>%
+            tally() %>%
+            rename(n_infected = n)
+        
+        diseased <- df %>%
+            drop_na(dead) %>%
+            group_by(municipality) %>%
+            tally() %>%
+            rename(n_dead = n)
+        
+        out <- left_join(infected, diseased, by="municipality")
+        return(out)
+        
+    })
+    
     time_series_county <- reactive({
 
         df <- fetch_data()
-        print(df)        
         
         by_date_region <- df %>%
             group_by(date, county) %>%
@@ -67,12 +114,37 @@ shinyServer(function(input, output) {
         })
 
         df <- bind_rows(splt)
-        
-        print(table(df$county))
+
         return(df)
                 
     })
+
+    time_series_municipality <- reactive({
+        
+        df <- fetch_data()
+                
+        by_date_municipality <- df %>%
+            group_by(date, municipality) %>%
+            tally() %>%
+            rename(daily=n) %>%
+            arrange(municipality, date)
+        
+        splt <- by_date_municipality %>%
+            group_by(municipality) %>%
+            group_split(municipality)
+        
+        splt <- lapply(splt, function(x) {
+            x$cumsum = cumsum(x$daily)
+            return(x)
+        })
+        
+        df <- bind_rows(splt)
+                
+        return(df)
+        
+    })
     
+        
     time_series_totals <- reactive({
         
         df <- fetch_data()
@@ -86,8 +158,24 @@ shinyServer(function(input, output) {
         
         return(by_date)
     })
+    
 
-
+    compile_table_municipality <- reactive({
+        df_county <- totals_by_municipality() %>%
+            arrange(desc(n_infected)) %>%
+            replace_na(list(municipality='Ukjent')) %>%
+            rename(`Smittede`=n_infected, `Døde`=n_dead, Kommune=municipality)
+        return(df_county)
+    })
+    
+    
+    compile_table_county <- reactive({
+        df_county <- totals_by_county() %>%
+            arrange(desc(n_infected)) %>%
+            replace_na(list(county='Ukjent')) %>%
+            rename(`Smittede`=n_infected, `Døde`=n_dead, Fylke=county)
+        return(df_county)
+    })
     
     compile_table <- reactive({
         df_county <- time_series_county() %>%
@@ -96,44 +184,98 @@ shinyServer(function(input, output) {
             pivot_wider(
                 names_from = c(county), 
                 values_from = c(cumsum)
-            )
+            ) %>%
+            fill(-date, .direction="downup")
         
         df_totals <- time_series_totals() %>%
             select(-daily) %>%
-            rename(totals = cumsum)
+            rename(Totalt = cumsum)
         
         df <- left_join(df_totals, df_county, by="date") %>%
             arrange(desc(date)) %>%
-            select(date, totals, Agder, Innlandet, `Møre og Romsdal`, Nordland, 
+            select(date, Totalt, Agder, Innlandet, `Møre og Romsdal`, Nordland, 
                    Oslo, Rogaland, `Vestfold og Telemark`, `Troms og Finnmark`, 
                    `Trøndelag`, Vestland, Viken)
             
-        
 
         return(df)
     })
 
+    output$todayInfected <- renderValueBox({
+        
+        disease_count <- nrow(
+            fetch_data() %>%
+                filter(date == today())
+        )
+        
+        valueBox(
+            disease_count, "Nye tilfeller i dag", icon = icon("list"),
+            color = "aqua"
+        )
+    })    
+    
+    output$totalInfected <- renderValueBox({
+        disease_count <- fetch_data_overview()$confirmed
+        
+        #disease_count <- nrow(
+        #    fetch_data()
+        #)
+        
+        valueBox(
+            disease_count, "Bekreftet smittet", icon = icon("list"),
+            color = "orange"
+        )
+    })    
+    
+    output$totalDiseased <- renderValueBox({
+        disease_count <- fetch_data_overview()$dead
+        
+        #disease_count <- nrow(
+        #    fetch_data() %>%
+        #        drop_na(dead)
+        #)
+        
+        valueBox(
+            disease_count, "Døde", icon = icon("list"),
+            color = "red"
+        )
+    })    
+    
     output$fullTable = DT::renderDataTable({
         compile_table()
     },
     rownames = FALSE,
-    options = list(dom = 't'), 
-    colnames = c('Dato', 'Totalt', 'Agder', 'Innlandet', 'Møre og Romsdal', 'Norland', 
-                 'Oslo', 'Rogaland', 'Vestfold og Telemark', 'Troms og Finnmark', 'Trøndelag', 
-                 'Vestland', 'Viken')
+    options = list(dom = 't')
     )
     
-    output$norgePlot <- renderPlot({
+    output$countyTable = DT::renderDataTable({
+        compile_table_county()
+    },
+    rownames = FALSE,
+    options = list(dom = 't')
+    )
+    
+    output$municipalityTable = DT::renderDataTable({
+        compile_table_municipality()
+    },
+    rownames = FALSE,
+    options = list(dom = 't')
+    )
+    
+    output$norwayPlot <- renderPlot({
+        countyPlot()
+    })
+    output$countyPlot <- renderPlot({
+        countyPlot()
+    })
+    
+    countyPlot <- function() {
         
         df_norge  <- time_series_totals()
         df_fylker <- time_series_county()
         
-        #print(df_norge)
-        print(table(df_fylker$county))
-        
         # Filter dataframe on selection
         if( length(input$input_fylke) > 0 ) {
-            print(input$input_fylke)
             
             df_fylker <- df_fylker %>%
                 filter(county %in% input$input_fylke) %>%
@@ -195,7 +337,7 @@ shinyServer(function(input, output) {
                 scale_color_brewer("", type="qual", palette = "Set3")
             
         }
-        p <- p + xlab("Dato") + ylab("Antall smittede") +
+        p <- p + xlab("Dato") + ylab("Bekreftet smittede") +
             scale_x_date(date_breaks = "days" , date_labels = "%d.%b")
         
         p <- p + 
@@ -210,7 +352,7 @@ shinyServer(function(input, output) {
             theme(legend.position="top")
         p
         
-    })
+    }
     
-
+    
 })

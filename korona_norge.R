@@ -97,6 +97,12 @@ df
 write_csv(df, "data/populasjon.csv")
 
 library(curl)
+con <- curl_fetch_memory("https://www.vg.no/spesial/2020/corona-viruset/data/norway-table-overview/")
+all_cases <- jsonlite::fromJSON(rawToChar(con$content))
+all_cases
+
+
+
 con <- curl("https://www.vg.no/spesial/2020/corona-viruset/data/norway-region-data/")
 con
 d <- curl_fetch_memory("https://www.vg.no/spesial/2020/corona-viruset/data/norway-table-overview/?region=county")
@@ -107,6 +113,15 @@ e
 ## fetch data ##
 con_all <- curl_fetch_memory("https://www.vg.no/spesial/2020/corona-viruset/data/norway-allCases/")
 all <- jsonlite::fromJSON(rawToChar(con_all$content))
+
+all
+
+for(i in 1:length(all)) {
+  all[[i]]$date = dates[i]
+}
+all
+
+
 
 dates <- names(all)
 for(i in 1:length(all)) {
@@ -123,6 +138,8 @@ df <- df %>%
 df
 write_csv(df, "./data/vg.csv")
 
+df %>% drop_na(dead)
+df %>% drop_na(recovered)
 
 # time_series_county
 df <- read_csv("./data/vg.csv")
