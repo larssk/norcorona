@@ -84,17 +84,29 @@ df <- read_delim(
   "data/Personer1.utf8.csv", delim=";", 
   escape_double = TRUE, col_names = FALSE, skip=3
 ) %>%
-  rename(fylke=X1, sex=X2, population=X3) %>%
-  mutate(fylke = word(fylke, 2, -1)) %>%
-  group_by(fylke) %>%
-  summarise(population=sum(population)) %>%
-  mutate(fylke = ifelse(grepl('Troms', fylke), word(fylke, 1, 3), fylke)) %>%
-  mutate(fylke = ifelse(grepl('Trøndelag', fylke), word(fylke, 1), fylke)) %>%
-  mutate(short = tolower(fylke)) %>%
-  mutate(short = word(short, 1))
+  rename(county_raw=X1, sex=X2, population=X3) %>%
+  mutate(county_code = word(county_raw, 1)) %>%
+  mutate(county = word(county_raw, 2, -1)) %>%
+  mutate(county = ifelse(grepl('Troms', county), word(county, 1, 3), county)) %>%
+  mutate(county = ifelse(grepl('Trøndelag', county), word(county, 1), county))
 df
 
 write_csv(df, "data/populasjon.csv")
+
+df %>% group_by(county, county_code) %>%
+  summarise(population = sum(population))
+
+
+df <- read_delim(
+  "data/Folkemengde.utf8.csv", delim=";", 
+  escape_double = TRUE, col_names = FALSE, skip=3
+) %>%
+  rename(municipality_raw=X1, population=X2) %>%
+  mutate(municipality_code = word(municipality_raw, 1)) %>%
+  mutate(municipality = word(municipality_raw, 2, -1)) 
+
+df  
+write_csv(df, "data/populasjon_kommuner.csv")
 
 library(curl)
 con <- curl_fetch_memory("https://www.vg.no/spesial/2020/corona-viruset/data/norway-table-overview/")
@@ -183,7 +195,8 @@ df_county %>%
   pivot_wider(
     names_from = c(county), 
     values_from = c(cumsum)
-)
+) %>%
+  fill(-date)
   
 df <- left_join(df_totals, df_county, by="date")    
 df
