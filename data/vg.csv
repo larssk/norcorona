@@ -1,0 +1,630 @@
+municipality,municipalityCode,county,countyCode,confirmed,dead,recovered,smittekilde,sykdomsgrad,kilde,gender,date
+Drammen,3005,Viken,30,2020-03-11,NA,NA,Italia,NA,NA,NA,2020-03-11
+Drammen,3005,Viken,30,2020-03-11,NA,NA,Østerrike,NA,NA,NA,2020-03-11
+Fredrikstad,3004,Viken,30,2020-03-11,NA,NA,utlandet,NA,NA,NA,2020-03-11
+Fredrikstad,3004,Viken,30,2020-03-11,NA,NA,utlandet,NA,NA,NA,2020-03-11
+Lyngdal,4225,Agder,42,2020-03-11,NA,NA,Italia,mild,NA,NA,2020-03-11
+Aurskog-Høland,3026,Viken,30,2020-03-11,NA,NA,ukjent,moderat,NA,NA,2020-03-11
+Nordre Follo ,3020,Viken,30,2020-03-11,NA,NA,Utlandet,NA,NA,NA,2020-03-11
+Nordre Follo ,3020,Viken,30,2020-03-11,NA,NA,Utlandet,NA,NA,NA,2020-03-11
+Skiptvet,3015,Viken,30,2020-03-11,NA,NA,Utlandet,NA,NA,NA,2020-03-11
+Bærum ,3024,Viken,30,2020-03-11,NA,NA,Østerrike,NA,NA,NA,2020-03-11
+Bærum,3024,Viken,30,2020-03-11,NA,NA,Østerrike,NA,NA,NA,2020-03-11
+Bærum,3024,Viken,30,2020-03-11,NA,NA,Østerrike,NA,NA,NA,2020-03-11
+Bærum,3024,Viken,30,2020-03-11,NA,NA,Østerrike,NA,NA,NA,2020-03-11
+Vestby,3019,Viken,30,2020-03-11,NA,NA,Ukjent,NA,NA,NA,2020-03-11
+Vestby,3019,Viken,30,2020-03-11,NA,NA,Ukjent ,NA,NA,NA,2020-03-11
+Vestby,3019,Viken,30,2020-03-11,NA,NA,Ukjent,NA,NA,NA,2020-03-11
+Tromsø,5401,Troms og Finnmark,54,2020-03-11,NA,NA,Ukjent,NA,NA,NA,2020-03-11
+Stjørdal,5035,Trøndelag,50,2020-03-11,NA,NA,Ukjent,NA,NA,NA,2020-03-11
+Frosta,5036,Trøndelag,50,2020-03-11,NA,NA,Ukjent,NA,NA,NA,2020-03-11
+Frosta,5036,Trøndelag,50,2020-03-11,NA,NA,Ukjent,NA,NA,NA,2020-03-11
+Frosta,5036,Trøndelag,50,2020-03-11,NA,NA,Ukjent,NA,NA,NA,2020-03-11
+Frosta,5036,Trøndelag,50,2020-03-11,NA,NA,Ukjent,NA,NA,NA,2020-03-11
+Frosta,5036,Trøndelag,50,2020-03-11,NA,NA,Ukjent,NA,NA,NA,2020-03-11
+Frosta,5036,Trøndelag,50,2020-03-11,NA,NA,Ukjent,NA,NA,NA,2020-03-11
+Frosta,5036,Trøndelag,50,2020-03-11,NA,NA,Ukjent,NA,NA,NA,2020-03-11
+Tønsberg,3803,Vestfold og Telemark,38,2020-03-11,NA,NA,Ukjent,NA,NA,NA,2020-03-11
+Skien,3807,Vestfold og Telemark,38,2020-03-11,NA,NA,Østerrike,NA,NA,NA,2020-03-11
+Skien,3807,Vestfold og Telemark,38,2020-03-11,NA,NA,Østerrike,NA,NA,NA,2020-03-11
+Skien,3807,Vestfold og Telemark,38,2020-03-11,NA,NA,Østerrike,NA,NA,NA,2020-03-11
+Skien,3807,Vestfold og Telemark,38,2020-03-11,NA,NA,Østerrike,NA,NA,NA,2020-03-11
+Skien,3807,Vestfold og Telemark,38,2020-03-11,NA,NA,Østerrike,NA,NA,NA,2020-03-11
+Selbu ,5032,Trøndelag,50,2020-03-11,NA,NA,Ukjent,NA,NA,NA,2020-03-11
+Åmli,4217,Agder,42,2020-03-11,NA,NA,Italia,NA,NA,NA,2020-03-11
+Lørenskog,3029,Viken,30,2020-03-11,NA,NA,ukjent,NA,NA,NA,2020-03-11
+Lørenskog,3029,Viken,30,2020-03-11,NA,NA,ukjent,NA,NA,NA,2020-03-11
+Kongsberg,3006,Viken,30,2020-03-11,NA,NA,Utlandet,Mild,NA,NA,2020-03-11
+Kongsberg,3006,Viken,30,2020-03-11,NA,NA,Utlandet,Mild,NA,NA,2020-03-11
+Time,1121,Rogaland,11,2020-03-11,NA,NA,Norge,Mild,NA,NA,2020-03-11
+Time,1121,Rogaland,11,2020-03-11,NA,NA,Norge ,Mild ,NA,NA,2020-03-11
+Eigersund,1101,Rogaland,11,2020-03-11,NA,NA,Utlandet ,NA,NA,NA,2020-03-11
+Sel,3437,Innlandet,34,2020-03-11,NA,NA,ukjent,NA,NA,NA,2020-03-11
+Sel,3437,Innlandet,34,2020-03-11,NA,NA,ukjent,NA,NA,NA,2020-03-11
+Sel,3437,Innlandet,34,2020-03-11,NA,NA,ukjent,NA,NA,NA,2020-03-11
+Sel,3437,Innlandet,34,2020-03-11,NA,NA,ukjent,NA,NA,NA,2020-03-11
+Sel,3437,Innlandet,34,2020-03-11,NA,NA,ukjent,NA,NA,NA,2020-03-11
+Sel,3437,Innlandet,34,2020-03-11,NA,NA,ukjent,NA,NA,NA,2020-03-11
+Sel,3437,Innlandet,34,2020-03-11,NA,NA,ukjent,NA,NA,NA,2020-03-11
+Sel,3437,Innlandet,34,2020-03-11,NA,NA,ukjent,NA,NA,NA,2020-03-11
+Tønsberg,3803,Vestfold og Telemark,38,2020-03-11,NA,NA,ukjent,NA,NA,NA,2020-03-11
+Tønsberg,3803,Vestfold og Telemark,38,2020-03-11,NA,NA,ukjent,NA,NA,NA,2020-03-11
+Tønsberg,3803,Vestfold og Telemark,38,2020-03-11,NA,NA,ukjent,NA,NA,NA,2020-03-11
+Tønsberg,3803,Vestfold og Telemark,38,2020-03-11,NA,NA,ukjent,NA,NA,NA,2020-03-11
+Tønsberg,3803,Vestfold og Telemark,38,2020-03-11,NA,NA,ukjent,NA,NA,NA,2020-03-11
+Tønsberg,3803,Vestfold og Telemark,38,2020-03-11,NA,NA,ukjent,NA,NA,NA,2020-03-11
+Bergen,4601,Vestland,46,2020-03-11,NA,NA,ukjent,NA,bt.no,NA,2020-03-11
+Bergen,4601,Vestland,46,2020-03-11,NA,NA,ukjent,NA,bt.no,NA,2020-03-11
+Bergen,4601,Vestland,46,2020-03-11,NA,NA,ukjent,NA,bt.no,NA,2020-03-11
+Bergen,4601,Vestland,46,2020-03-11,NA,NA,ukjent,NA,bt.no,NA,2020-03-11
+Bergen,4601,Vestland,46,2020-03-11,NA,NA,ukjent,NA,bt.no,NA,2020-03-11
+Bergen,4601,Vestland,46,2020-03-11,NA,NA,ukjent,NA,bt.no,NA,2020-03-11
+Bergen,4601,Vestland,46,2020-03-11,NA,NA,ukjent,NA,bt.no,NA,2020-03-11
+Stryn,4651,Vestland,46,2020-03-11,NA,NA,ukjent,mild per 11.03,NA,NA,2020-03-11
+Stryn,4651,Vestland,46,2020-03-11,NA,NA,ukjent,mild per 11.03,NA,NA,2020-03-11
+Stryn,4651,Vestland,46,2020-03-11,NA,NA,ukjent,mild per 11.03,NA,NA,2020-03-11
+Stryn,4651,Vestland,46,2020-03-11,NA,NA,ukjent,mild per 11.03,NA,NA,2020-03-11
+Stryn,4651,Vestland,46,2020-03-11,NA,NA,ukjent,mild per 11.03,NA,NA,2020-03-11
+Stryn,4651,Vestland,46,2020-03-11,NA,NA,ukjent,mild per 11.03,NA,NA,2020-03-11
+Lillehammer,3405,Innlandet,34,2020-03-11,NA,NA,ukjent,NA,NA,NA,2020-03-11
+Lillehammer,3405,Innlandet,34,2020-03-11,NA,NA,ukjent,NA,NA,NA,2020-03-11
+Ringsaker,3411,Innlandet,34,2020-03-11,NA,NA,utlandet,NA,NA,NA,2020-03-11
+Ringsaker,3411,Innlandet,34,2020-03-11,NA,NA,utlandet,NA,NA,NA,2020-03-11
+Sandefjord,3804,Vestfold og Telemark,38,2020-03-11,NA,NA,ukjent,NA,NA,NA,2020-03-11
+Rauma,1539,Møre og Romsdal,15,2020-03-11,NA,NA,ukjent,NA,rbnett,NA,2020-03-11
+Oslo,0301,Oslo,03,2020-03-11,NA,NA,ukjent,NA,medisinsk fagsjef sier totalen for Oslo var cirka 140 11.03,NA,2020-03-11
+Oslo,0301,Oslo,03,2020-03-11,NA,NA,ukjent,NA,medisinsk fagsjef sier totalen for Oslo var cirka 140 11.03,NA,2020-03-11
+Oslo,0301,Oslo,03,2020-03-11,NA,NA,ukjent,NA,medisinsk fagsjef sier totalen for Oslo var cirka 140 11.03,NA,2020-03-11
+Oslo,0301,Oslo,03,2020-03-11,NA,NA,ukjent,NA,medisinsk fagsjef sier totalen for Oslo var cirka 140 11.03,NA,2020-03-11
+Oslo,0301,Oslo,03,2020-03-11,NA,NA,ukjent,NA,medisinsk fagsjef sier totalen for Oslo var cirka 140 11.03,NA,2020-03-11
+Oslo,0301,Oslo,03,2020-03-11,NA,NA,ukjent,NA,medisinsk fagsjef sier totalen for Oslo var cirka 140 11.03,NA,2020-03-11
+Oslo,0301,Oslo,03,2020-03-11,NA,NA,ukjent,NA,medisinsk fagsjef sier totalen for Oslo var cirka 140 11.03,NA,2020-03-11
+Oslo,0301,Oslo,03,2020-03-11,NA,NA,ukjent,NA,medisinsk fagsjef sier totalen for Oslo var cirka 140 11.03,NA,2020-03-11
+Oslo,0301,Oslo,03,2020-03-11,NA,NA,ukjent,NA,medisinsk fagsjef sier totalen for Oslo var cirka 140 11.03,NA,2020-03-11
+Oslo,0301,Oslo,03,2020-03-11,NA,NA,ukjent,NA,medisinsk fagsjef sier totalen for Oslo var cirka 140 11.03,NA,2020-03-11
+Oslo,0301,Oslo,03,2020-03-11,NA,NA,ukjent,NA,medisinsk fagsjef sier totalen for Oslo var cirka 140 11.03,NA,2020-03-11
+Oslo,0301,Oslo,03,2020-03-11,NA,NA,ukjent,NA,medisinsk fagsjef sier totalen for Oslo var cirka 140 11.03,NA,2020-03-11
+Oslo,0301,Oslo,03,2020-03-11,NA,NA,ukjent,NA,medisinsk fagsjef sier totalen for Oslo var cirka 140 11.03,NA,2020-03-11
+Oslo,0301,Oslo,03,2020-03-11,NA,NA,ukjent,NA,medisinsk fagsjef sier totalen for Oslo var cirka 140 11.03,NA,2020-03-11
+Oslo,0301,Oslo,03,2020-03-11,NA,NA,ukjent,NA,medisinsk fagsjef sier totalen for Oslo var cirka 140 11.03,NA,2020-03-11
+Oslo,0301,Oslo,03,2020-03-11,NA,NA,ukjent,NA,medisinsk fagsjef sier totalen for Oslo var cirka 140 11.03,NA,2020-03-11
+Oslo,0301,Oslo,03,2020-03-11,NA,NA,ukjent,NA,medisinsk fagsjef sier totalen for Oslo var cirka 140 11.03,NA,2020-03-11
+Oslo,0301,Oslo,03,2020-03-11,NA,NA,ukjent,NA,medisinsk fagsjef sier totalen for Oslo var cirka 140 11.03,NA,2020-03-11
+Oslo,0301,Oslo,03,2020-03-11,NA,NA,ukjent,NA,medisinsk fagsjef sier totalen for Oslo var cirka 140 11.03,NA,2020-03-11
+Oslo,0301,Oslo,03,2020-03-11,NA,NA,ukjent,NA,medisinsk fagsjef sier totalen for Oslo var cirka 140 11.03,NA,2020-03-11
+Oslo,0301,Oslo,03,2020-03-11,NA,NA,ukjent,NA,medisinsk fagsjef sier totalen for Oslo var cirka 140 11.03,NA,2020-03-11
+Oslo,0301,Oslo,03,2020-03-11,NA,NA,ukjent,NA,medisinsk fagsjef sier totalen for Oslo var cirka 140 11.03,NA,2020-03-11
+Oslo,0301,Oslo,03,2020-03-11,NA,NA,ukjent,NA,medisinsk fagsjef sier totalen for Oslo var cirka 140 11.03,NA,2020-03-11
+Oslo,0301,Oslo,03,2020-03-11,NA,NA,ukjent,NA,medisinsk fagsjef sier totalen for Oslo var cirka 140 11.03,NA,2020-03-11
+Oslo,0301,Oslo,03,2020-03-11,NA,NA,ukjent,NA,medisinsk fagsjef sier totalen for Oslo var cirka 140 11.03,NA,2020-03-11
+Oslo,0301,Oslo,03,2020-03-11,NA,NA,ukjent,NA,medisinsk fagsjef sier totalen for Oslo var cirka 140 11.03,NA,2020-03-11
+Oslo,0301,Oslo,03,2020-03-11,NA,NA,ukjent,NA,medisinsk fagsjef sier totalen for Oslo var cirka 140 11.03,NA,2020-03-11
+Oslo,0301,Oslo,03,2020-03-11,NA,NA,ukjent,NA,medisinsk fagsjef sier totalen for Oslo var cirka 140 11.03,NA,2020-03-11
+Oslo,0301,Oslo,03,2020-03-11,NA,NA,ukjent,NA,medisinsk fagsjef sier totalen for Oslo var cirka 140 11.03,NA,2020-03-11
+Oslo,0301,Oslo,03,2020-03-11,NA,NA,ukjent,NA,medisinsk fagsjef sier totalen for Oslo var cirka 140 11.03,NA,2020-03-11
+Oslo,0301,Oslo,03,2020-03-11,NA,NA,ukjent,NA,medisinsk fagsjef sier totalen for Oslo var cirka 140 11.03,NA,2020-03-11
+Oslo,0301,Oslo,03,2020-03-11,NA,NA,ukjent,NA,medisinsk fagsjef sier totalen for Oslo var cirka 140 11.03,NA,2020-03-11
+Oslo,0301,Oslo,03,2020-03-11,NA,NA,ukjent,NA,medisinsk fagsjef sier totalen for Oslo var cirka 140 11.03,NA,2020-03-11
+Oslo,0301,Oslo,03,2020-03-11,NA,NA,ukjent,NA,medisinsk fagsjef sier totalen for Oslo var cirka 140 11.03,NA,2020-03-11
+Oslo,0301,Oslo,03,2020-03-11,NA,NA,ukjent,NA,medisinsk fagsjef sier totalen for Oslo var cirka 140 11.03,NA,2020-03-11
+Oslo,0301,Oslo,03,2020-03-11,NA,NA,ukjent,NA,medisinsk fagsjef sier totalen for Oslo var cirka 140 11.03,NA,2020-03-11
+Oslo,0301,Oslo,03,2020-03-11,NA,NA,ukjent,NA,medisinsk fagsjef sier totalen for Oslo var cirka 140 11.03,NA,2020-03-11
+Oslo,0301,Oslo,03,2020-03-11,NA,NA,ukjent,NA,medisinsk fagsjef sier totalen for Oslo var cirka 140 11.03,NA,2020-03-11
+Oslo,0301,Oslo,03,2020-03-11,NA,NA,ukjent,NA,medisinsk fagsjef sier totalen for Oslo var cirka 140 11.03,NA,2020-03-11
+Oslo,0301,Oslo,03,2020-03-11,NA,NA,ukjent,NA,medisinsk fagsjef sier totalen for Oslo var cirka 140 11.03,NA,2020-03-11
+Oslo,0301,Oslo,03,2020-03-11,NA,NA,ukjent,NA,medisinsk fagsjef sier totalen for Oslo var cirka 140 11.03,NA,2020-03-11
+Oslo,0301,Oslo,03,2020-03-11,NA,NA,ukjent,NA,medisinsk fagsjef sier totalen for Oslo var cirka 140 11.03,NA,2020-03-11
+Oslo,0301,Oslo,03,2020-03-11,NA,NA,ukjent,NA,medisinsk fagsjef sier totalen for Oslo var cirka 140 11.03,NA,2020-03-11
+Oslo,0301,Oslo,03,2020-03-11,NA,NA,ukjent,NA,medisinsk fagsjef sier totalen for Oslo var cirka 140 11.03,NA,2020-03-11
+Oslo,0301,Oslo,03,2020-03-11,NA,NA,ukjent,NA,medisinsk fagsjef sier totalen for Oslo var cirka 140 11.03,NA,2020-03-11
+Oslo,0301,Oslo,03,2020-03-11,NA,NA,ukjent,NA,medisinsk fagsjef sier totalen for Oslo var cirka 140 11.03,NA,2020-03-11
+Oslo,0301,Oslo,03,2020-03-11,NA,NA,ukjent,NA,medisinsk fagsjef sier totalen for Oslo var cirka 140 11.03,NA,2020-03-11
+Oslo,0301,Oslo,03,2020-03-11,NA,NA,ukjent,NA,medisinsk fagsjef sier totalen for Oslo var cirka 140 11.03,NA,2020-03-11
+Oslo,0301,Oslo,03,2020-03-11,NA,NA,ukjent,NA,medisinsk fagsjef sier totalen for Oslo var cirka 140 11.03,NA,2020-03-11
+Oslo,0301,Oslo,03,2020-03-11,NA,NA,ukjent,NA,medisinsk fagsjef sier totalen for Oslo var cirka 140 11.03,NA,2020-03-11
+Oslo,0301,Oslo,03,2020-03-11,NA,NA,ukjent,NA,medisinsk fagsjef sier totalen for Oslo var cirka 140 11.03,NA,2020-03-11
+Oslo,0301,Oslo,03,2020-03-11,NA,NA,ukjent,NA,medisinsk fagsjef sier totalen for Oslo var cirka 140 11.03,NA,2020-03-11
+Oslo,0301,Oslo,03,2020-03-11,NA,NA,ukjent,NA,medisinsk fagsjef sier totalen for Oslo var cirka 140 11.03,NA,2020-03-11
+Oslo,0301,Oslo,03,2020-03-11,NA,NA,ukjent,NA,medisinsk fagsjef sier totalen for Oslo var cirka 140 11.03,NA,2020-03-11
+Oslo,0301,Oslo,03,2020-03-11,NA,NA,ukjent,NA,medisinsk fagsjef sier totalen for Oslo var cirka 140 11.03,NA,2020-03-11
+Oslo,0301,Oslo,03,2020-03-11,NA,NA,ukjent,NA,medisinsk fagsjef sier totalen for Oslo var cirka 140 11.03,NA,2020-03-11
+Oslo,0301,Oslo,03,2020-03-11,NA,NA,ukjent,NA,medisinsk fagsjef sier totalen for Oslo var cirka 140 11.03,NA,2020-03-11
+Oslo,0301,Oslo,03,2020-03-11,NA,NA,ukjent,NA,medisinsk fagsjef sier totalen for Oslo var cirka 140 11.03,NA,2020-03-11
+Oslo,0301,Oslo,03,2020-03-11,NA,NA,ukjent,NA,medisinsk fagsjef sier totalen for Oslo var cirka 140 11.03,NA,2020-03-11
+Oslo,0301,Oslo,03,2020-03-11,NA,NA,ukjent,NA,medisinsk fagsjef sier totalen for Oslo var cirka 140 11.03,NA,2020-03-11
+Oslo,0301,Oslo,03,2020-03-11,NA,NA,ukjent,NA,medisinsk fagsjef sier totalen for Oslo var cirka 140 11.03,NA,2020-03-11
+Oslo,0301,Oslo,03,2020-03-11,NA,NA,ukjent,NA,medisinsk fagsjef sier totalen for Oslo var cirka 140 11.03,NA,2020-03-11
+Oslo,0301,Oslo,03,2020-03-11,NA,NA,ukjent,NA,medisinsk fagsjef sier totalen for Oslo var cirka 140 11.03,NA,2020-03-11
+Oslo,0301,Oslo,03,2020-03-11,NA,NA,ukjent,NA,medisinsk fagsjef sier totalen for Oslo var cirka 140 11.03,NA,2020-03-11
+Oslo,0301,Oslo,03,2020-03-11,NA,NA,ukjent,NA,medisinsk fagsjef sier totalen for Oslo var cirka 140 11.03,NA,2020-03-11
+Oslo,0301,Oslo,03,2020-03-11,NA,NA,ukjent,NA,medisinsk fagsjef sier totalen for Oslo var cirka 140 11.03,NA,2020-03-11
+Oslo,0301,Oslo,03,2020-03-11,NA,NA,ukjent,NA,medisinsk fagsjef sier totalen for Oslo var cirka 140 11.03,NA,2020-03-11
+Oslo,0301,Oslo,03,2020-03-11,NA,NA,ukjent,NA,medisinsk fagsjef sier totalen for Oslo var cirka 140 11.03,NA,2020-03-11
+Oslo,0301,Oslo,03,2020-03-11,NA,NA,ukjent,NA,medisinsk fagsjef sier totalen for Oslo var cirka 140 11.03,NA,2020-03-11
+Oslo,0301,Oslo,03,2020-03-11,NA,NA,ukjent,NA,medisinsk fagsjef sier totalen for Oslo var cirka 140 11.03,NA,2020-03-11
+Oslo,0301,Oslo,03,2020-03-11,NA,NA,ukjent,NA,medisinsk fagsjef sier totalen for Oslo var cirka 140 11.03,NA,2020-03-11
+Oslo,0301,Oslo,03,2020-03-11,NA,NA,ukjent,NA,medisinsk fagsjef sier totalen for Oslo var cirka 140 11.03,NA,2020-03-11
+Oslo,0301,Oslo,03,2020-03-11,NA,NA,ukjent,NA,medisinsk fagsjef sier totalen for Oslo var cirka 140 11.03,NA,2020-03-11
+Oslo,0301,Oslo,03,2020-03-11,NA,NA,ukjent,NA,medisinsk fagsjef sier totalen for Oslo var cirka 140 11.03,NA,2020-03-11
+Oslo,0301,Oslo,03,2020-03-11,NA,NA,ukjent,NA,medisinsk fagsjef sier totalen for Oslo var cirka 140 11.03,NA,2020-03-11
+Oslo,0301,Oslo,03,2020-03-11,NA,NA,ukjent,NA,medisinsk fagsjef sier totalen for Oslo var cirka 140 11.03,NA,2020-03-11
+Oslo,0301,Oslo,03,2020-03-11,NA,NA,ukjent,NA,medisinsk fagsjef sier totalen for Oslo var cirka 140 11.03,NA,2020-03-11
+Oslo,0301,Oslo,03,2020-03-11,NA,NA,ukjent,NA,medisinsk fagsjef sier totalen for Oslo var cirka 140 11.03,NA,2020-03-11
+Oslo,0301,Oslo,03,2020-03-11,NA,NA,ukjent,NA,medisinsk fagsjef sier totalen for Oslo var cirka 140 11.03,NA,2020-03-11
+Oslo,0301,Oslo,03,2020-03-11,NA,NA,ukjent,NA,medisinsk fagsjef sier totalen for Oslo var cirka 140 11.03,NA,2020-03-11
+Oslo,0301,Oslo,03,2020-03-11,NA,NA,ukjent,NA,medisinsk fagsjef sier totalen for Oslo var cirka 140 11.03,NA,2020-03-11
+Oslo,0301,Oslo,03,2020-03-11,NA,NA,ukjent,NA,medisinsk fagsjef sier totalen for Oslo var cirka 140 11.03,NA,2020-03-11
+Oslo,0301,Oslo,03,2020-03-11,NA,NA,ukjent,NA,medisinsk fagsjef sier totalen for Oslo var cirka 140 11.03,NA,2020-03-11
+Oslo,0301,Oslo,03,2020-03-11,NA,NA,ukjent,NA,medisinsk fagsjef sier totalen for Oslo var cirka 140 den 11.03,NA,2020-03-11
+Oslo,0301,Oslo,03,2020-03-11,NA,NA,ukjent,NA,medisinsk fagsjef sier totalen for Oslo var cirka 140 11.03,NA,2020-03-11
+Oslo,0301,Oslo,03,2020-03-11,NA,NA,ukjent,NA,medisinsk fagsjef sier totalen for Oslo var cirka 140 11.03,NA,2020-03-11
+Oslo,0301,Oslo,03,2020-03-11,NA,NA,ukjent,NA,medisinsk fagsjef sier totalen for Oslo var cirka 140 11.03,NA,2020-03-11
+Oslo,0301,Oslo,03,2020-03-11,NA,NA,ukjent,NA,medisinsk fagsjef sier totalen for Oslo var cirka 140 11.03,NA,2020-03-11
+Oslo,0301,Oslo,03,2020-03-11,NA,NA,ukjent,NA,medisinsk fagsjef sier totalen for Oslo var cirka 140 11.03,NA,2020-03-11
+Randaberg,1127,Rogaland,11,2020-03-11,NA,NA,ukjent,NA,bygdebladet,NA,2020-03-11
+Randaberg,1127,Rogaland,11,2020-03-11,NA,NA,ukjent,NA,bygdebladet,NA,2020-03-11
+Randaberg,1127,Rogaland,11,2020-03-11,NA,NA,ukjent,NA,bygdebladet,NA,2020-03-11
+Jevnaker,3053,Viken,30,2020-03-11,NA,NA,ukjent,NA,kommunens nettsider,NA,2020-03-11
+Øygarden,4626,Vestland,46,2020-03-11,NA,NA,ukjent,NA,vestnytt.no,NA,2020-03-11
+Oslo,0301,Oslo,03,2020-03-11,NA,NA,ukjent,NA,NA,NA,2020-03-11
+Bærum,3024,Viken,30,2020-03-11,NA,NA,ukjent,NA,Budstikka,NA,2020-03-11
+Bærum,3024,Viken,30,2020-03-11,NA,NA,ukjent,NA,Budstikka,NA,2020-03-11
+Bærum,3024,Viken,30,2020-03-11,NA,NA,ukjent,NA,Budstikka,NA,2020-03-11
+Bærum,3024,Viken,30,2020-03-11,NA,NA,ukjent,NA,Budstikka,NA,2020-03-11
+Bærum,3024,Viken,30,2020-03-11,NA,NA,ukjent,NA,Budstikka,NA,2020-03-11
+Bærum,3024,Viken,30,2020-03-11,NA,NA,ukjent,NA,Budstikka,NA,2020-03-11
+Bærum,3024,Viken,30,2020-03-11,NA,NA,ukjent,NA,Budstikka,NA,2020-03-11
+Bærum,3024,Viken,30,2020-03-11,NA,NA,ukjent,NA,Budstikka,NA,2020-03-11
+Asker,3025,Viken,30,2020-03-11,NA,NA,ukjent,NA,Budstikka,NA,2020-03-11
+Asker,3025,Viken,30,2020-03-11,NA,NA,ukjent,NA,Budstikka,NA,2020-03-11
+Asker,3025,Viken,30,2020-03-11,NA,NA,ukjent,NA,Budstikka,NA,2020-03-11
+Asker,3025,Viken,30,2020-03-11,NA,NA,ukjent,NA,Budstikka,NA,2020-03-11
+Ålesund,1507,Møre og Romsdal,15,2020-03-11,NA,NA,ukjent,NA,NRK Møte og Romsdal,NA,2020-03-11
+Ålesund,1507,Møre og Romsdal,15,2020-03-11,NA,NA,ukjent,NA,NRK Møte og Romsdal,NA,2020-03-11
+Kongsberg,3006,Viken,30,2020-03-11,NA,NA,ukjent,NA,laagendalsposten,NA,2020-03-11
+Trondheim,5001,Trøndelag,50,2020-03-11,NA,NA,Østerrike,mild per 11.03,Trondheim kommune,NA,2020-03-11
+Trondheim,5001,Trøndelag,50,2020-03-11,NA,NA,Østerrike,mild per 11.03,Trondheim kommune,NA,2020-03-11
+Trondheim,5001,Trøndelag,50,2020-03-11,NA,NA,Østerrike,mild per 11.03,Trondheim kommune,NA,2020-03-11
+Trondheim,5001,Trøndelag,50,2020-03-11,NA,NA,Østerrike,mild per 11.03,Trondheim kommune,NA,2020-03-11
+Trondheim,5001,Trøndelag,50,2020-03-11,NA,NA,Østerrike,mild per 11.03,Trondheim kommune,NA,2020-03-11
+Trondheim,5001,Trøndelag,50,2020-03-11,NA,NA,Østerrike,mild per 11.03,Trondheim kommune,NA,2020-03-11
+Trondheim,5001,Trøndelag,50,2020-03-11,NA,NA,Østerrike,mild per 11.03,Trondheim kommune,NA,2020-03-11
+Trondheim,5001,Trøndelag,50,2020-03-11,NA,NA,Østerrike,mild per 11.03,Trondheim kommune,NA,2020-03-11
+Trondheim,5001,Trøndelag,50,2020-03-11,NA,NA,Østerrike,mild per 11.03,Trondheim kommune,NA,2020-03-11
+Trondheim,5001,Trøndelag,50,2020-03-11,NA,NA,Østerrike,mild per 11.03,Trondheim kommune,NA,2020-03-11
+Lørenskog,3029,Viken,30,2020-03-11,NA,NA,ukjent,mild per 11.03,Lørenskog kommune,NA,2020-03-11
+Ringebu,3439,Innlandet,34,2020-03-11,NA,NA,ukjent,NA,gd.no,NA,2020-03-11
+Ringebu,3439,Innlandet,34,2020-03-11,NA,NA,ukjent,NA,gd.no,NA,2020-03-11
+Indre Østfold,3014,Viken,30,2020-03-11,NA,NA,ukjent,NA,Kommunens nettsider,NA,2020-03-11
+Klepp,1120,Rogaland,11,2020-03-11,NA,NA,ukjent,NA,Kommunens hjemmesider,NA,2020-03-11
+Nittedal,3031,Viken,30,2020-03-11,NA,NA,ukjent,NA,Kommunens hjemmesider,NA,2020-03-11
+Bjørnafjorden,4624,Vestland,46,2020-03-11,NA,NA,utlandet,NA,Kommunens hjemmesider,mann,2020-03-11
+Frogn,3022,Viken,30,2020-03-11,NA,NA,NA,NA,NA,NA,2020-03-11
+Stavanger,1103,Rogaland,11,2020-03-11,NA,NA,Østerrike,NA,Kommunens hjemmesider,NA,2020-03-11
+Stavanger,1103,Rogaland,11,2020-03-11,NA,NA,Østerrike,NA,Kommunens hjemmesider,NA,2020-03-11
+Stavanger,1103,Rogaland,11,2020-03-11,NA,NA,Østerrike,NA,Kommunens hjemmesider,NA,2020-03-11
+Stavanger,1103,Rogaland,11,2020-03-11,NA,NA,Østerrike,NA,Kommunens hjemmesider,NA,2020-03-11
+Stavanger,1103,Rogaland,11,2020-03-11,NA,NA,Østerrike,NA,Kommunens hjemmesider,NA,2020-03-11
+Stavanger,1103,Rogaland,11,2020-03-11,NA,NA,Østerrike,NA,Kommunens hjemmesider,NA,2020-03-11
+Stavanger,1103,Rogaland,11,2020-03-11,NA,NA,Østerrike,NA,Kommunens hjemmesider,NA,2020-03-11
+Stavanger,1103,Rogaland,11,2020-03-11,NA,NA,Østerrike,NA,Kommunens hjemmesider,NA,2020-03-11
+Stavanger,1103,Rogaland,11,2020-03-11,NA,NA,Østerrike,NA,Kommunens hjemmesider,NA,2020-03-11
+Stavanger,1103,Rogaland,11,2020-03-11,NA,NA,Østerrike,NA,Kommunens hjemmesider,NA,2020-03-11
+Sandnes,1108,Rogaland,11,2020-03-11,NA,NA,ukjent,NA,NA,NA,2020-03-11
+Sandnes,1108,Rogaland,11,2020-03-11,NA,NA,ukjent,NA,NA,NA,2020-03-11
+Sandnes,1108,Rogaland,11,2020-03-11,NA,NA,ukjent,NA,NA,NA,2020-03-11
+Sandnes,1108,Rogaland,11,2020-03-11,NA,NA,ukjent,NA,NA,NA,2020-03-11
+Sandnes,1108,Rogaland,11,2020-03-11,NA,NA,ukjent,NA,NA,NA,2020-03-11
+Frogn,3022,Viken,30,2020-03-11,NA,NA,ukjent,NA,NA,NA,2020-03-11
+Indre Østfold,3014,Viken,30,2020-03-11,NA,NA,ukjent,NA,Smaalenenes Avis,NA,2020-03-11
+Ørsta,1520,Møre og Romsdal,15,2020-03-11,NA,NA,ukjent,NA,NA,NA,2020-03-11
+Løten,3412,Innlandet,34,2020-03-11,NA,NA,ukjent,NA,Kommunens nettsider,NA,2020-03-11
+Kongsberg,3006,Viken,30,2020-03-11,NA,NA,ukjent,NA,NRK Oslo og Viken,NA,2020-03-11
+Kongsberg,3006,Viken,30,2020-03-11,NA,NA,ukjent,NA,NRK Oslo og Viken,NA,2020-03-11
+Rælingen,3027,Viken,30,2020-03-11,NA,NA,Østerrike,NA,Kommunens nettsider,NA,2020-03-11
+Lillestrøm,3030,Viken,30,2020-03-11,NA,NA,ukjent,NA,rb.no,NA,2020-03-11
+Enebakk,3028,Viken,30,2020-03-11,NA,NA,ukjent,NA,rb.no,NA,2020-03-11
+Sola,1124,Rogaland,11,2020-03-11,NA,NA,ukjent,NA,Kommunens nettsider,NA,2020-03-11
+Sola,1124,Rogaland,11,2020-03-11,NA,NA,ukjent,NA,Kommunens nettsider,NA,2020-03-11
+Fredrikstad,3004,Viken,30,2020-03-10,NA,NA,Norge,mild,Kommunens nettsider,NA,2020-03-10
+Fredrikstad,3004,Viken,30,2020-03-10,NA,NA,Norge,mild,Kommunens nettsider,NA,2020-03-10
+Vestby,3019,Viken,30,2020-03-10,NA,NA,Utlandet,mild,Kommunens nettsider,NA,2020-03-10
+Vestby,3019,Viken,30,2020-03-10,NA,NA,Utlandet,mild,Kommunens nettsider,NA,2020-03-10
+Vestby,3019,Viken,30,2020-03-10,NA,NA,Utlandet,mild,Kommunens nettsider,NA,2020-03-10
+Vestby,3019,Viken,30,2020-03-10,NA,NA,Utlandet,mild,Kommunens nettsider,NA,2020-03-10
+Vestby,3019,Viken,30,2020-03-10,NA,NA,Utlandet,mild,Kommunens nettsider,mann,2020-03-10
+Vestby,3019,Viken,30,2020-03-10,NA,NA,Utlandet,mild,Kommunens nettsider,NA,2020-03-10
+Vestby,3019,Viken,30,2020-03-10,NA,NA,Norge,mild,Kommunens nettsider,NA,2020-03-10
+Time,1121,Rogaland,11,2020-03-10,NA,NA,Norge,mild,Kommuoverlegen 10. mars,NA,2020-03-10
+Sogndal,4640,Vestland,46,2020-03-10,NA,NA,Østerrike ,NA,NA,NA,2020-03-10
+Indre Østfold,3014,Viken,30,2020-03-10,NA,NA,Utlandet,NA,Kommunens nettsider,NA,2020-03-10
+Indre Østfold,3014,Viken,30,2020-03-10,NA,NA,Utlandet,NA,Kommunens nettsider,NA,2020-03-10
+Indre Østfold,3014,Viken,30,2020-03-10,NA,NA,Utlandet,NA,Kommunens nettsider,NA,2020-03-10
+Bærum ,3024,Viken,30,2020-03-10,NA,NA,Østerrike,NA,NA,NA,2020-03-10
+Bærum ,3024,Viken,30,2020-03-10,NA,NA,Østerrike,NA,NA,NA,2020-03-10
+Bærum ,3024,Viken,30,2020-03-10,NA,NA,Østerrike,NA,NA,NA,2020-03-10
+Bærum ,3024,Viken,30,2020-03-10,NA,NA,Østerrike,NA,NA,NA,2020-03-10
+Bærum ,3024,Viken,30,2020-03-10,NA,NA,Østerrike,NA,NA,NA,2020-03-10
+Bærum ,3024,Viken,30,2020-03-10,NA,NA,Østerrike,NA,NA,NA,2020-03-10
+Bærum ,3024,Viken,30,2020-03-10,NA,NA,Østerrike,NA,NA,NA,2020-03-10
+Oslo,0301,Oslo,03,2020-03-10,NA,NA,Norge,NA,NA,NA,2020-03-10
+Oppdal,5021,Trøndelag,50,2020-03-10,NA,NA,Italia,NA,"Ifølge opp.no besøkende i kommunen, for bryllup",NA,2020-03-10
+Lørenskog,3029,Viken,30,2020-03-10,NA,NA,Uklart,NA,NA,NA,2020-03-10
+Lørenskog,3029,Viken,30,2020-03-10,NA,NA,Uklart,NA,NA,NA,2020-03-10
+Lørenskog,3029,Viken,30,2020-03-10,NA,NA,Uklart,NA,NA,NA,2020-03-10
+Larvik,3805,Vestfold og Telemark,38,2020-03-10,NA,NA,Østerrike,NA,NA,NA,2020-03-10
+Oslo,0301,Oslo,03,2020-03-10,NA,NA,ukjent,NA,NA,NA,2020-03-10
+Oslo,0301,Oslo,03,2020-03-10,NA,NA,ukjent,NA,NA,NA,2020-03-10
+Oslo,0301,Oslo,03,2020-03-10,NA,NA,ukjent,NA,NA,NA,2020-03-10
+Oslo,0301,Oslo,03,2020-03-10,NA,NA,ukjent,NA,NA,NA,2020-03-10
+Oslo,0301,Oslo,03,2020-03-10,NA,NA,ukjent,NA,NA,NA,2020-03-10
+Oslo,0301,Oslo,03,2020-03-10,NA,NA,ukjent,NA,NA,NA,2020-03-10
+Oslo,0301,Oslo,03,2020-03-10,NA,NA,ukjent,NA,NA,NA,2020-03-10
+Oslo,0301,Oslo,03,2020-03-10,NA,NA,ukjent,NA,NA,NA,2020-03-10
+Oslo,0301,Oslo,03,2020-03-10,NA,NA,ukjent,NA,NA,NA,2020-03-10
+Oslo,0301,Oslo,03,2020-03-10,NA,NA,ukjent,NA,NA,NA,2020-03-10
+Oslo,0301,Oslo,03,2020-03-10,NA,NA,ukjent,NA,NA,NA,2020-03-10
+Oslo,0301,Oslo,03,2020-03-10,NA,NA,ukjent,NA,NA,NA,2020-03-10
+Oslo,0301,Oslo,03,2020-03-10,NA,NA,ukjent,NA,NA,NA,2020-03-10
+Oslo,0301,Oslo,03,2020-03-10,NA,NA,ukjent,NA,NA,NA,2020-03-10
+Oslo,0301,Oslo,03,2020-03-10,NA,NA,ukjent,NA,NA,NA,2020-03-10
+Frogn,3022,Viken,30,2020-03-10,NA,NA,ukjent,NA,amta.no,NA,2020-03-10
+Frogn,3022,Viken,30,2020-03-10,NA,NA,ukjent,NA,amta.no,NA,2020-03-10
+Frogn,3022,Viken,30,2020-03-10,NA,NA,ukjent,NA,amta.no,NA,2020-03-10
+Frogn,3022,Viken,30,2020-03-10,NA,NA,ukjent,NA,amta.no,NA,2020-03-10
+Moss,3002,Viken,30,2020-03-10,NA,NA,ukjent,NA,Moss Avis,NA,2020-03-10
+Ullensaker,3033,Viken,30,2020-03-10,NA,NA,ukjent,NA,Ullensaker kommune,NA,2020-03-10
+Ullensaker,3033,Viken,30,2020-03-10,NA,NA,ukjent,NA,Ullensaker kommune,NA,2020-03-10
+Ullensaker,3033,Viken,30,2020-03-10,NA,NA,ukjent,NA,Ullensaker kommune,NA,2020-03-10
+Ullensaker,3033,Viken,30,2020-03-10,NA,NA,ukjent,NA,Ullensaker kommune,NA,2020-03-10
+Ullensaker,3033,Viken,30,2020-03-10,NA,NA,ukjent,NA,Ullensaker kommune,NA,2020-03-10
+Nes,3034,Viken,30,2020-03-10,NA,NA,ukjent,NA,NA,NA,2020-03-10
+Gol,3041,Viken,30,2020-03-10,NA,NA,ukjent,NA,Hallingdølen,NA,2020-03-10
+Bergen,4601,Vestland,46,2020-03-10,NA,NA,ukjent,NA,NA,NA,2020-03-10
+Bergen,4601,Vestland,46,2020-03-10,NA,NA,ukjent,NA,NA,NA,2020-03-10
+Sula,1531,Møre og Romsdal,15,2020-03-10,NA,NA,ukjent,NA,Sunnmørsposten,NA,2020-03-10
+Ålesund,1507,Møre og Romsdal,15,2020-03-10,NA,NA,Østerrike,NA,Sunnmørsposten,NA,2020-03-10
+Sandefjord,3804,Vestfold og Telemark,38,2020-03-10,NA,NA,Østerrike,NA,Kommunens nettsider ,NA,2020-03-10
+Sandefjord,3804,Vestfold og Telemark,38,2020-03-10,NA,NA,Østerrike,NA,Kommunens nettsider ,NA,2020-03-10
+Sandefjord,3804,Vestfold og Telemark,38,2020-03-10,NA,NA,Østerrike,NA,Kommunens nettsider ,NA,2020-03-10
+Sandefjord,3804,Vestfold og Telemark,38,2020-03-10,NA,NA,Østerrike,NA,Kommunens nettsider ,NA,2020-03-10
+Sandefjord,3804,Vestfold og Telemark,38,2020-03-10,NA,NA,ukjent,NA,Kommunens nettsider ,NA,2020-03-10
+Færder,3811,Vestfold og Telemark,38,2020-03-10,NA,NA,ukjent,NA,Tønsbergs blad,NA,2020-03-10
+Færder,3811,Vestfold og Telemark,38,2020-03-10,NA,NA,ukjent,NA,Tønsbergs blad,NA,2020-03-10
+Færder,3811,Vestfold og Telemark,38,2020-03-10,NA,NA,ukjent,NA,Tønsbergs blad,NA,2020-03-10
+Frosta,5036,Trøndelag,50,2020-03-10,NA,NA,Ukjent,NA,Kommunens hjemmesider 10. mars,NA,2020-03-10
+Frosta,5036,Trøndelag,50,2020-03-10,NA,NA,Ukjent,NA,Kommunens hjemmesider 10. mars,NA,2020-03-10
+Frosta,5036,Trøndelag,50,2020-03-10,NA,NA,Ukjent,NA,Kommunens hjemmesider 10. mars,NA,2020-03-10
+Frosta,5036,Trøndelag,50,2020-03-10,NA,NA,Ukjent,NA,Kommunens hjemmesider 10. mars,NA,2020-03-10
+Stavanger,1103,Rogaland,11,2020-03-10,NA,NA,ukjent,NA,Kommunens hjemmesider,NA,2020-03-10
+Stavanger,1103,Rogaland,11,2020-03-10,NA,NA,ukjent,NA,Kommunens hjemmesider,NA,2020-03-10
+Stavanger,1103,Rogaland,11,2020-03-10,NA,NA,ukjent,NA,Kommunens hjemmesider,NA,2020-03-10
+Stavanger,1103,Rogaland,11,2020-03-10,NA,NA,ukjent,NA,Kommunens hjemmesider,NA,2020-03-10
+Stavanger,1103,Rogaland,11,2020-03-10,NA,NA,ukjent,NA,Kommunens hjemmesider,NA,2020-03-10
+Stavanger,1103,Rogaland,11,2020-03-10,NA,NA,ukjent,NA,Kommunens hjemmesider,NA,2020-03-10
+Stavanger,1103,Rogaland,11,2020-03-10,NA,NA,ukjent,NA,Kommunens hjemmesider,NA,2020-03-10
+Kristiansand,4204,Agder,42,2020-03-10,NA,NA,ukjent,NA,Fædrelandsvennen,NA,2020-03-10
+Kristiansand,4204,Agder,42,2020-03-10,NA,NA,ukjent,NA,Fædrelandsvennen,NA,2020-03-10
+Kristiansand,4204,Agder,42,2020-03-10,NA,NA,ukjent,NA,Fædrelandsvennen,NA,2020-03-10
+Kristiansand,4204,Agder,42,2020-03-10,NA,NA,ukjent,NA,Fædrelandsvennen,NA,2020-03-10
+Kristiansand,4204,Agder,42,2020-03-10,NA,NA,ukjent,NA,Fædrelandsvennen,NA,2020-03-10
+Kristiansand,4204,Agder,42,2020-03-10,NA,NA,ukjent,NA,Fædrelandsvennen,NA,2020-03-10
+Kristiansand,4204,Agder,42,2020-03-10,NA,NA,ukjent,NA,Fædrelandsvennen,NA,2020-03-10
+Kristiansand,4204,Agder,42,2020-03-10,NA,NA,ukjent,NA,Fædrelandsvennen,NA,2020-03-10
+Kristiansand,4204,Agder,42,2020-03-10,NA,NA,ukjent,NA,Fædrelandsvennen,NA,2020-03-10
+Kristiansand,4204,Agder,42,2020-03-10,NA,NA,ukjent,NA,Fædrelandsvennen,NA,2020-03-10
+Kristiansand,4204,Agder,42,2020-03-10,NA,NA,ukjent,NA,Fædrelandsvennen,NA,2020-03-10
+Bærum,3024,Viken,30,2020-03-10,NA,NA,Østerrike,NA,Bærum kommune,NA,2020-03-10
+Bærum,3024,Viken,30,2020-03-10,NA,NA,Østerrike,NA,Bærum kommune,NA,2020-03-10
+Bærum,3024,Viken,30,2020-03-10,NA,NA,Østerrike,NA,Bærum kommune,NA,2020-03-10
+Bærum,3024,Viken,30,2020-03-10,NA,NA,Østerrike,NA,Bærum kommune,NA,2020-03-10
+Bærum,3024,Viken,30,2020-03-10,NA,NA,Østerrike,NA,Bærum kommune,NA,2020-03-10
+Bærum,3024,Viken,30,2020-03-10,NA,NA,Østerrike,NA,Bærum kommune,NA,2020-03-10
+Bærum,3024,Viken,30,2020-03-10,NA,NA,Østerrike,NA,Bærum kommune,NA,2020-03-10
+Bærum,3024,Viken,30,2020-03-10,NA,NA,Østerrike,NA,Bærum kommune,NA,2020-03-10
+Bærum,3024,Viken,30,2020-03-10,NA,NA,Østerrike,NA,Bærum kommune,NA,2020-03-10
+Bærum,3024,Viken,30,2020-03-10,NA,NA,Østerrike,NA,Bærum kommune,NA,2020-03-10
+Bærum,3024,Viken,30,2020-03-10,NA,NA,Østerrike,NA,Bærum kommune,NA,2020-03-10
+Bærum,3024,Viken,30,2020-03-10,NA,NA,Østerrike,NA,Bærum kommune,NA,2020-03-10
+Ringsaker,3411,Innlandet,34,2020-03-10,NA,NA,ukjent,NA,Hamar arbeiderblad,NA,2020-03-10
+Ringsaker,3411,Innlandet,34,2020-03-10,NA,NA,ukjent,NA,Hamar arbeiderblad,NA,2020-03-10
+Ringsaker,3411,Innlandet,34,2020-03-10,NA,NA,ukjent,NA,Hamar arbeiderblad,NA,2020-03-10
+Ringsaker,3411,Innlandet,34,2020-03-10,NA,NA,ukjent,NA,Hamar arbeiderblad,NA,2020-03-10
+Trondheim,5001,Trøndelag,50,2020-03-10,NA,NA,Østerrike,NA,Trondheim kommune,mann,2020-03-10
+Trondheim,5001,Trøndelag,50,2020-03-10,NA,NA,Østerrike,NA,Trondheim kommune,mann,2020-03-10
+Trondheim,5001,Trøndelag,50,2020-03-10,NA,NA,Østerrike,NA,Trondheim kommune,mann,2020-03-10
+Sel,3437,Innlandet,34,2020-03-10,NA,NA,ukjent,NA,Noddalen.no,NA,2020-03-10
+Sel,3437,Innlandet,34,2020-03-10,NA,NA,ukjent,NA,Noddalen.no,NA,2020-03-10
+Enebakk,3028,Viken,30,2020-03-10,NA,NA,ukjent,NA,Enebakk Avis,NA,2020-03-10
+Sola,1124,Rogaland,11,2020-03-10,NA,NA,Østerrike,NA,Sola kommune,NA,2020-03-10
+Sola,1124,Rogaland,11,2020-03-10,NA,NA,Østerrike,NA,Sola kommune,NA,2020-03-10
+Sarpsborg,3003,Viken,30,2020-03-10,NA,NA,Østerrike,NA,Sarpsborg arbeiderblad,NA,2020-03-10
+Lillestrøm,3030,Viken,30,2020-03-10,NA,NA,utlandet,NA,rb.no,NA,2020-03-10
+Eigersund,1101,Rogaland,11,2020-03-10,NA,NA,utlandet,NA,Dalane Tidende,NA,2020-03-10
+Randaberg,1127,Rogaland,11,2020-03-10,NA,NA,Østerrike,NA,NA,NA,2020-03-10
+Østre Toten,3442,Innlandet,34,2020-03-10,NA,NA,utlandet,NA,Kommunens nettsider,mann,2020-03-10
+Bergen,4601,Vestland,46,2020-03-10,NA,NA,ukjent,NA,Bergen kommune,NA,2020-03-10
+Bergen,4601,Vestland,46,2020-03-10,NA,NA,ukjent,NA,Bergen kommune,NA,2020-03-10
+Bergen,4601,Vestland,46,2020-03-10,NA,NA,ukjent,NA,Bergen kommune,NA,2020-03-10
+Bergen,4601,Vestland,46,2020-03-10,NA,NA,ukjent,NA,Bergen kommune,NA,2020-03-10
+Bergen,4601,Vestland,46,2020-03-10,NA,NA,ukjent,NA,Bergen kommune,NA,2020-03-10
+Bergen,4601,Vestland,46,2020-03-10,NA,NA,ukjent,NA,Bergen kommune,NA,2020-03-10
+Bergen,4601,Vestland,46,2020-03-10,NA,NA,ukjent,NA,Bergen kommune,NA,2020-03-10
+Nord-Aurdal,3451,Innlandet,34,2020-03-10,NA,NA,ukjent,NA,Ordføreren ,NA,2020-03-10
+Hemsedal,3042,Viken,30,2020-03-10,NA,NA,utlandet,NA,Hallingdølen,NA,2020-03-10
+Gausdal,3441,Innlandet,34,2020-03-10,NA,NA,utlandet,NA,gd.no,NA,2020-03-10
+Gausdal,3441,Innlandet,34,2020-03-10,NA,NA,utlandet,NA,gd.no,NA,2020-03-10
+Øygarden,4626,Vestland,46,2020-03-10,NA,NA,ukjent,NA,NA,NA,2020-03-10
+Holmestrand,3802,Vestfold og Telemark,38,2020-03-10,NA,NA,ukjent,NA,Jarlsberg Avis,NA,2020-03-10
+Sola,1124,Rogaland,11,2020-03-10,NA,NA,Østerrike,NA,Sola kommune,NA,2020-03-10
+Sola,1124,Rogaland,11,2020-03-10,NA,NA,Østerrike,NA,Sola kommune,NA,2020-03-10
+Sola,1124,Rogaland,11,2020-03-10,NA,NA,Østerrike,NA,Sola kommune,NA,2020-03-10
+Stavanger,1103,Rogaland,11,2020-03-10,NA,NA,Østerrike,NA,Stavanger kommune,NA,2020-03-10
+Stavanger,1103,Rogaland,11,2020-03-10,NA,NA,Østerrike,NA,Stavanger kommune,NA,2020-03-10
+Stavanger,1103,Rogaland,11,2020-03-10,NA,NA,Østerrike,NA,Stavanger kommune,NA,2020-03-10
+Stavanger,1103,Rogaland,11,2020-03-10,NA,NA,Østerrike,NA,Stavanger kommune,NA,2020-03-10
+Stavanger,1103,Rogaland,11,2020-03-10,NA,NA,Østerrike,NA,Stavanger kommune,NA,2020-03-10
+Stavanger,1103,Rogaland,11,2020-03-10,NA,NA,Østerrike,NA,Stavanger kommune,NA,2020-03-10
+Stavanger,1103,Rogaland,11,2020-03-10,NA,NA,Østerrike,NA,Stavanger kommune,NA,2020-03-10
+Stavanger,1103,Rogaland,11,2020-03-10,NA,NA,Østerrike,NA,Stavanger kommune,NA,2020-03-10
+Stavanger,1103,Rogaland,11,2020-03-10,NA,NA,ukjent,NA,Stavanger kommune,NA,2020-03-10
+Stavanger,1103,Rogaland,11,2020-03-10,NA,NA,ukjent,NA,Stavanger kommune,NA,2020-03-10
+Stavanger,1103,Rogaland,11,2020-03-10,NA,NA,ukjent,NA,Stavanger kommune,NA,2020-03-10
+Stavanger,1103,Rogaland,11,2020-03-10,NA,NA,ukjent,NA,Stavanger kommune,NA,2020-03-10
+Stavanger,1103,Rogaland,11,2020-03-10,NA,NA,ukjent,NA,Stavanger kommune,NA,2020-03-10
+Stavanger,1103,Rogaland,11,2020-03-10,NA,NA,ukjent,NA,Stavanger kommune,NA,2020-03-10
+Asker,3025,Viken,30,2020-03-10,NA,NA,Østerrike,NA,Kommunens nettsider,NA,2020-03-10
+Asker,3025,Viken,30,2020-03-10,NA,NA,Østerrike,NA,Kommunens nettsider,NA,2020-03-10
+Asker,3025,Viken,30,2020-03-10,NA,NA,Østerrike,NA,Kommunens nettsider,NA,2020-03-10
+Asker,3025,Viken,30,2020-03-10,NA,NA,Østerrike,NA,Kommunens nettsider,NA,2020-03-10
+Asker,3025,Viken,30,2020-03-10,NA,NA,Østerrike,NA,Kommunens nettsider,NA,2020-03-10
+Asker,3025,Viken,30,2020-03-10,NA,NA,ukjent,NA,Kommunens nettsider,NA,2020-03-10
+Asker,3025,Viken,30,2020-03-10,NA,NA,ukjent,NA,Kommunens nettsider,NA,2020-03-10
+Sandnes,1108,Rogaland,11,2020-03-10,NA,NA,Norge,NA,Kommunens nettsider,NA,2020-03-10
+Sandnes,1108,Rogaland,11,2020-03-10,NA,NA,England,NA,https://www.aftenbladet.no/lokalt/i/QoAjmP/ni-nye-koronatilfeller-i-sandnes,NA,2020-03-10
+Sandnes,1108,Rogaland,11,2020-03-10,NA,NA,utlandet,NA,Kommunens nettsider,NA,2020-03-10
+Sandnes,1108,Rogaland,11,2020-03-10,NA,NA,utlandet,NA,Kommunens nettsider,NA,2020-03-10
+Indre Østfold,3014,Viken,30,2020-03-10,NA,NA,utlandet,NA,Kommunens nettsider,NA,2020-03-10
+Indre Østfold,3014,Viken,30,2020-03-10,NA,NA,utlandet,NA,Kommunens nettsider,NA,2020-03-10
+Indre Østfold,3014,Viken,30,2020-03-10,NA,NA,utlandet,NA,Kommunens nettsider,NA,2020-03-10
+Indre Østfold,3014,Viken,30,2020-03-10,NA,NA,utlandet,NA,Kommunens nettsider,NA,2020-03-10
+Indre Østfold,3014,Viken,30,2020-03-10,NA,NA,utlandet,NA,Kommunens nettsider,NA,2020-03-10
+Indre Østfold,3014,Viken,30,2020-03-10,NA,NA,utlandet,NA,Kommunens nettsider,NA,2020-03-10
+Indre Østfold,3014,Viken,30,2020-03-10,NA,NA,utlandet,NA,Kommunens nettsider,NA,2020-03-10
+Farsund,4206,Agder,42,2020-03-10,NA,NA,Mellom-Europa,NA,fvn.no,NA,2020-03-10
+Farsund,4206,Agder,42,2020-03-10,NA,NA,Mellom-Europa,NA,fvn.no,NA,2020-03-10
+Farsund,4206,Agder,42,2020-03-10,NA,NA,Mellom-Europa,NA,fvn.no,NA,2020-03-10
+Farsund,4206,Agder,42,2020-03-10,NA,NA,Mellom-Europa,NA,fvn.no,NA,2020-03-10
+Farsund,4206,Agder,42,2020-03-10,NA,NA,Mellom-Europa,NA,fvn.no,NA,2020-03-10
+Farsund,4206,Agder,42,2020-03-10,NA,NA,Mellom-Europa,NA,fvn.no,NA,2020-03-10
+Farsund,4206,Agder,42,2020-03-10,NA,NA,Mellom-Europa,NA,fvn.no,NA,2020-03-10
+Farsund,4206,Agder,42,2020-03-10,NA,NA,Mellom-Europa,NA,fvn.no,NA,2020-03-10
+Hå,1119,Rogaland,11,2020-03-10,NA,NA,Norge,NA,NA,NA,2020-03-10
+Sogndal,4640,Vestland,46,2020-03-10,NA,NA,Ukjent,NA,NA,NA,2020-03-10
+Time,1121,Rogaland,11,2020-03-09,NA,NA,Østerrike,mild,NA,NA,2020-03-09
+Steinkjer,5006,Trøndelag,50,2020-03-09,NA,NA,Norge,mild,"Kommunen, 9. mars",NA,2020-03-09
+Lier,3049,Viken,30,2020-03-09,NA,NA,NA,mild,"Kommunen, 9. mars",NA,2020-03-09
+Kvinnherrad,4617,Vestland,46,2020-03-09,NA,NA,utlandet,mild,"Kommuneoverlege, 9. mars",NA,2020-03-09
+Kristiansand,4204,Agder,42,2020-03-09,NA,NA,Østerrike,mild,"Kommuneoverlege, 9. mars",NA,2020-03-09
+Kristiansand,4204,Agder,42,2020-03-09,NA,NA,Østerrike,mild,"Kommuneoverlege, 9. mars",NA,2020-03-09
+Kristiansand,4204,Agder,42,2020-03-09,NA,NA,Østerrike,mild,"Kommuneoverlege, 9. mars",NA,2020-03-09
+Trondheim,5001,Trøndelag,50,2020-03-09,NA,NA,NA,NA,NA,NA,2020-03-09
+Stavanger,1103,Rogaland,11,2020-03-09,NA,NA,NA,NA,NA,NA,2020-03-09
+Stavanger,1103,Rogaland,11,2020-03-09,NA,NA,NA,NA,NA,NA,2020-03-09
+Stavanger,1103,Rogaland,11,2020-03-09,NA,NA,NA,NA,NA,NA,2020-03-09
+Stavanger,1103,Rogaland,11,2020-03-09,NA,NA,NA,NA,NA,NA,2020-03-09
+Stavanger,1103,Rogaland,11,2020-03-09,NA,NA,NA,NA,NA,NA,2020-03-09
+Stavanger,1103,Rogaland,11,2020-03-09,NA,NA,NA,NA,NA,NA,2020-03-09
+Tønsberg,3803,Vestfold og Telemark,38,2020-03-09,NA,NA,NA,NA,Sykehuset i Vestfold bekrefter at en person er innlagt med coronasmitte,NA,2020-03-09
+Sunnfjord,4647,Vestland,46,2020-03-09,NA,NA,ukjent,mild,"Kommunen, 9. mars",NA,2020-03-09
+Sel,3437,Innlandet,34,2020-03-09,NA,NA,ukjent,NA,Kommunen,NA,2020-03-09
+Moss,3002,Viken,30,2020-03-09,NA,NA,NA,NA,NA,NA,2020-03-09
+Nittedal ,3031,Viken,30,2020-03-09,NA,NA,NA,NA,Kommunens fb-side,NA,2020-03-09
+Bergen,4601,Vestland,46,2020-03-09,NA,NA,ukjent,mild,"Kommunen, 9. mars",NA,2020-03-09
+Bergen,4601,Vestland,46,2020-03-09,NA,NA,ukjent,NA,NA,NA,2020-03-09
+Stavanger,1103,Rogaland,11,2020-03-09,NA,NA,ukjent,NA,NA,NA,2020-03-09
+Stavanger,1103,Rogaland,11,2020-03-09,NA,NA,ukjent,NA,NA,NA,2020-03-09
+Sarpsborg,3003,Viken,30,2020-03-09,NA,NA,ukjent,NA,Sarpsborg Arbeiderblad,NA,2020-03-09
+Gjøvik,3407,Innlandet,34,2020-03-09,NA,NA,ukjent,NA,Oppland Arbeiderblad,mann,2020-03-09
+Kristiansand,4204,Agder,42,2020-03-09,NA,NA,Østerrike,NA,NA,NA,2020-03-09
+Kristiansand,4204,Agder,42,2020-03-09,NA,NA,Østerrike,NA,NA,NA,2020-03-09
+Kristiansand,4204,Agder,42,2020-03-09,NA,NA,Østerrike,NA,NA,NA,2020-03-09
+Kristiansand,4204,Agder,42,2020-03-09,NA,NA,Østerrike,NA,NA,NA,2020-03-09
+Kristiansand,4204,Agder,42,2020-03-09,NA,NA,Østerrike,NA,NA,NA,2020-03-09
+Kristiansand,4204,Agder,42,2020-03-09,NA,NA,Østerrike,NA,NA,NA,2020-03-09
+Kristiansand,4204,Agder,42,2020-03-09,NA,NA,Østerrike,NA,NA,NA,2020-03-09
+Sel,3437,Innlandet,34,2020-03-09,NA,NA,ukjent,NA,Kommunen,NA,2020-03-09
+Sel,3437,Innlandet,34,2020-03-09,NA,NA,ukjent,NA,Kommunen,NA,2020-03-09
+Sandnes,1108,Rogaland,11,2020-03-09,NA,NA,England,NA,Stavanger Aftenblad,NA,2020-03-09
+Sandnes,1108,Rogaland,11,2020-03-09,NA,NA,Østerrike,NA,Stavanger Aftenblad,NA,2020-03-09
+Sandnes,1108,Rogaland,11,2020-03-09,NA,NA,Østerrike,NA,Stavanger Aftenblad,NA,2020-03-09
+Sandnes,1108,Rogaland,11,2020-03-09,NA,NA,Østerrike,NA,Stavanger Aftenblad,NA,2020-03-09
+Asker,3025,Viken,30,2020-03-09,NA,NA,ukjent,NA,Budstikka,NA,2020-03-09
+Bærum,3024,Viken,30,2020-03-09,NA,NA,Østerrike,NA,Kommunens nettsider,NA,2020-03-09
+Bærum,3024,Viken,30,2020-03-09,NA,NA,Østerrike,NA,Kommunens nettsider,NA,2020-03-09
+Bærum,3024,Viken,30,2020-03-09,NA,NA,Italia,NA,Kommunens nettsider,NA,2020-03-09
+Bærum,3024,Viken,30,2020-03-09,NA,NA,Norge,NA,Kommunens nettsider,NA,2020-03-09
+Bærum,3024,Viken,30,2020-03-09,NA,NA,Norge,NA,Kommunens nettsider,NA,2020-03-09
+Hole,3038,Viken,30,2020-03-09,NA,NA,Østerrike,NA,Kommuneoverlegen vil ikke presisere hvilken kommune i Ringeriksregionen dette gjelder,NA,2020-03-09
+Løten,3412,Innlandet,34,2020-03-09,NA,NA,ukjent,NA,Hamar Arbeiderblad,NA,2020-03-09
+Kristiansand,4204,Agder,42,2020-03-09,NA,NA,Østerrike,NA,NA,NA,2020-03-09
+Haugesund,1106,Rogaland,11,2020-03-09,NA,NA,Norge,NA,Haugesunds avis,NA,2020-03-09
+Haugesund,1106,Rogaland,11,2020-03-09,NA,NA,Norge,NA,Haugesunds avis,NA,2020-03-09
+Sandnes,1108,Rogaland,11,2020-03-09,NA,NA,Østerrike,NA,Stavanger Aftenblad,NA,2020-03-09
+Sandnes,1108,Rogaland,11,2020-03-09,NA,NA,Østerrike,NA,Stavanger Aftenblad,NA,2020-03-09
+Sandnes,1108,Rogaland,11,2020-03-09,NA,NA,Østerrike,NA,Stavanger Aftenblad,NA,2020-03-09
+Sandnes,1108,Rogaland,11,2020-03-09,NA,NA,Italia,NA,Stavanger Aftenblad,NA,2020-03-09
+Sandnes,1108,Rogaland,11,2020-03-09,NA,NA,Italia,NA,Stavanger Aftenblad,NA,2020-03-09
+Hadsel,1866,Nordland,18,2020-03-08,NA,NA,utlandet,mild,NA,NA,2020-03-08
+Frosta,5036,Trøndelag,50,2020-03-08,NA,NA,ukjent,mild,NA,NA,2020-03-08
+Sandnes,1108,Rogaland,11,2020-03-08,NA,NA,Østerrike,mild,NA,NA,2020-03-08
+Sandnes,1108,Rogaland,11,2020-03-08,NA,NA,Østerrike,mild,NA,NA,2020-03-08
+Oslo,0301,Oslo,03,2020-03-08,NA,NA,ukjent,mild,NA,NA,2020-03-08
+Oslo,0301,Oslo,03,2020-03-08,NA,NA,ukjent,mild,NA,NA,2020-03-08
+Oslo,0301,Oslo,03,2020-03-08,NA,NA,ukjent,mild,NA,NA,2020-03-08
+Oslo,0301,Oslo,03,2020-03-08,NA,NA,ukjent,mild,NA,NA,2020-03-08
+Oslo,0301,Oslo,03,2020-03-08,NA,NA,ukjent,mild,NA,NA,2020-03-08
+Oslo,0301,Oslo,03,2020-03-08,NA,NA,ukjent,mild,NA,NA,2020-03-08
+Bamble,3813,Vestfold og Telemark,38,2020-03-08,NA,NA,utlandet,ingen symptomer,"Kommunen, 9. mars",NA,2020-03-08
+Lørenskog,3029,Viken,30,2020-03-08,NA,NA,Norge,mild,"Kommunen, 8. mars",NA,2020-03-08
+Lørenskog,3029,Viken,30,2020-03-08,NA,NA,Norge,mild,"Kommunen, 8. mars",NA,2020-03-08
+Lørenskog,3029,Viken,30,2020-03-08,NA,NA,Norge,mild,"Kommunen, 8. mars",NA,2020-03-08
+Sauda,1135,Rogaland,11,2020-03-08,NA,NA,Italia,mild,NA,NA,2020-03-08
+Sauda,1135,Rogaland,11,2020-03-08,NA,NA,Italia,mild,NA,NA,2020-03-08
+Stavanger,1103,Rogaland,11,2020-03-08,NA,NA,ukjent,NA,NA,NA,2020-03-08
+Kristiansand,4204,Agder,42,2020-03-07,NA,NA,Italia,mild,NA,NA,2020-03-07
+Kristiansand,4204,Agder,42,2020-03-07,NA,NA,Italia,mild,NA,kvinne ,2020-03-07
+Ås,3021,Viken,30,2020-03-07,NA,NA,Norge,mild,NA,NA,2020-03-07
+Ås,3021,Viken,30,2020-03-07,NA,NA,Norge,mild,NA,NA,2020-03-07
+Bodø,1804,Nordland,18,2020-03-07,NA,NA,utlandet,mild,NA,NA,2020-03-07
+Stavanger,1103,Rogaland,11,2020-03-07,NA,NA,Italia,mild,NA,NA,2020-03-07
+Stavanger,1103,Rogaland,11,2020-03-07,NA,NA,Italia,mild,NA,NA,2020-03-07
+Stavanger,1103,Rogaland,11,2020-03-07,NA,NA,Italia,mild,NA,NA,2020-03-07
+Indre Østfold,3014,Viken,30,2020-03-07,NA,NA,ukjent,mild,NA,NA,2020-03-07
+Bærum,3024,Viken,30,2020-03-07,NA,NA,ukjent,mild,NA,NA,2020-03-07
+Bærum ,3024,Viken,30,2020-03-07,NA,NA,ukjent,mild,NA,NA,2020-03-07
+Bærum ,3024,Viken,30,2020-03-07,NA,NA,ukjent,mild,NA,NA,2020-03-07
+Nittedal ,3031,Viken,30,2020-03-07,NA,NA,ukjent,mild,NA,mann ,2020-03-07
+Nittedal ,3031,Viken,30,2020-03-07,NA,NA,ukjent,mild,NA,NA,2020-03-07
+Lørenskog,3029,Viken,30,2020-03-07,NA,NA,utlandet,mild,NA,NA,2020-03-07
+Lørenskog,3029,Viken,30,2020-03-07,NA,NA,utlandet,mild,NA,NA,2020-03-07
+Lørenskog,3029,Viken,30,2020-03-07,NA,NA,utlandet,mild,NA,NA,2020-03-07
+Oslo,0301,Oslo,03,2020-03-07,NA,NA,ukjent,mild,NA,NA,2020-03-07
+Oslo,0301,Oslo,03,2020-03-07,NA,NA,ukjent,mild,NA,NA,2020-03-07
+Oslo,0301,Oslo,03,2020-03-07,NA,NA,ukjent,mild,NA,NA,2020-03-07
+Oslo,0301,Oslo,03,2020-03-07,NA,NA,ukjent,mild,NA,NA,2020-03-07
+Oslo,0301,Oslo,03,2020-03-07,NA,NA,ukjent,mild,NA,NA,2020-03-07
+Frosta,5036,Trøndelag,50,2020-03-07,NA,NA,Norge,mild,NA,NA,2020-03-07
+Frosta,5036,Trøndelag,50,2020-03-07,NA,NA,Norge,mild,NA,NA,2020-03-07
+Frosta,5036,Trøndelag,50,2020-03-07,NA,NA,Norge,mild,NA,NA,2020-03-07
+Oslo,0301,Oslo,03,2020-03-07,NA,NA,ukjent,mild,NA,Kvinne,2020-03-07
+Eidsvoll,3035,Viken,30,2020-03-07,NA,NA,utlandet,NA,NA,NA,2020-03-07
+Bærum,3024,Viken,30,2020-03-06,NA,NA,ukjent,mild,NA,NA,2020-03-06
+Bærum,3024,Viken,30,2020-03-06,NA,NA,ukjent,mild,NA,NA,2020-03-06
+Stavanger,1103,Rogaland,11,2020-03-06,NA,NA,Italia,mild,NA,NA,2020-03-06
+Stavanger,1103,Rogaland,11,2020-03-06,NA,NA,Italia,mild,NA,NA,2020-03-06
+Tromsø,5401,Troms og Finnmark,54,2020-03-06,NA,NA,Italia,mild,NA,NA,2020-03-06
+Tromsø,5401,Troms og Finnmark,54,2020-03-06,NA,NA,Italia,mild,NA,NA,2020-03-06
+Tysvær,1146,Rogaland,11,2020-03-06,NA,NA,utlandet,mild,NA,NA,2020-03-06
+Frosta,5036,Trøndelag,50,2020-03-06,NA,NA,Norge,mild,NA,NA,2020-03-06
+Frosta,5036,Trøndelag,50,2020-03-06,NA,NA,Norge,mild,NA,NA,2020-03-06
+Frosta,5036,Trøndelag,50,2020-03-06,NA,NA,Norge,mild,NA,NA,2020-03-06
+Frosta,5036,Trøndelag,50,2020-03-06,NA,NA,Norge,mild,NA,NA,2020-03-06
+Oslo,0301,Oslo,03,2020-03-06,NA,NA,Italia,mild,NA,NA,2020-03-06
+Gjesdal,1122,Rogaland,11,2020-03-06,NA,NA,Asia,mild,NA,NA,2020-03-06
+Gjesdal,1122,Rogaland,11,2020-03-06,NA,NA,Asia,mild,NA,NA,2020-03-06
+Bergen,4601,Vestland,46,2020-03-06,NA,NA,ukjent,mild,NA,NA,2020-03-06
+Oslo,0301,Oslo,03,2020-03-06,NA,NA,ukjent,mild,NA,NA,2020-03-06
+Oslo,0301,Oslo,03,2020-03-06,NA,NA,ukjent,mild,NA,NA,2020-03-06
+Oslo,0301,Oslo,03,2020-03-06,NA,NA,ukjent,mild,NA,NA,2020-03-06
+Oslo,0301,Oslo,03,2020-03-06,NA,NA,ukjent,mild,NA,NA,2020-03-06
+Senja,5421,Troms og Finnmark,54,2020-03-06,NA,NA,Italia,mild,NA,NA,2020-03-06
+Målselv,5418,Troms og Finnmark,54,2020-03-06,NA,NA,ukjent,mild,NA,NA,2020-03-06
+Hamar,3403,Innlandet,34,2020-03-06,NA,NA,Norge,mild,NA,NA,2020-03-06
+Hamar,3403,Innlandet,34,2020-03-06,NA,NA,Norge,mild,NA,NA,2020-03-06
+Sel,3437,Innlandet,34,2020-03-06,NA,NA,Italia,mild,NA,NA,2020-03-06
+Sel,3437,Innlandet,34,2020-03-06,NA,NA,Norge,mild,NA,NA,2020-03-06
+Sel,3437,Innlandet,34,2020-03-06,NA,NA,Norge,mild,NA,NA,2020-03-06
+Sel,3437,Innlandet,34,2020-03-06,NA,NA,Norge,mild,NA,NA,2020-03-06
+Sel,3437,Innlandet,34,2020-03-06,NA,NA,Norge,mild,NA,NA,2020-03-06
+Asker,3025,Viken,30,2020-03-06,NA,NA,Norge,mild,NA,NA,2020-03-06
+Øygarden,4626,Vestland,46,2020-03-06,NA,NA,ukjent,mild,NA,NA,2020-03-06
+Trondheim,5001,Trøndelag,50,2020-03-06,NA,NA,Italia,mild,NA,mann,2020-03-06
+Trondheim,5001,Trøndelag,50,2020-03-06,NA,NA,Italia,mild,NA,mann,2020-03-06
+Malvik,5031,Trøndelag,50,2020-03-06,NA,NA,Italia,mild,NA,mann,2020-03-06
+Malvik,5031,Trøndelag,50,2020-03-06,NA,NA,Italia,mild,NA,mann,2020-03-06
+Bodø,1804,Nordland,18,2020-03-06,NA,NA,utlandet,mild,NA,NA,2020-03-06
+Ringebu,3439,Innlandet,34,2020-03-06,NA,NA,Norge,mild,"Kommunen, 8. mars ",NA,2020-03-06
+Sel,3437,Innlandet,34,2020-03-05,NA,NA,utlandet,mild,NA,NA,2020-03-05
+Frosta,5036,Trøndelag,50,2020-03-05,NA,NA,Norge,mild,NA,NA,2020-03-05
+Ålesund,1507,Møre og Romsdal,15,2020-03-05,NA,NA,Italia,mild,NA,mann,2020-03-05
+Bergen,4601,Vestland,46,2020-03-05,NA,NA,Italia,mild,NA,NA,2020-03-05
+Bergen,4601,Vestland,46,2020-03-05,NA,NA,Italia,mild,NA,NA,2020-03-05
+Bergen,4601,Vestland,46,2020-03-05,NA,NA,Italia,mild,NA,NA,2020-03-05
+Bergen,4601,Vestland,46,2020-03-05,NA,NA,Italia,mild,NA,NA,2020-03-05
+Bergen,4601,Vestland,46,2020-03-05,NA,NA,Italia,mild,NA,NA,2020-03-05
+Skien,3807,Vestfold og Telemark,38,2020-03-05,NA,NA,ukjent,mild,NA,NA,2020-03-05
+Kristiansand,4204,Agder,42,2020-03-05,NA,NA,Italia,mild,NA,NA,2020-03-05
+Kristiansand,4204,Agder,42,2020-03-05,NA,NA,Italia,mild,NA,NA,2020-03-05
+Oslo,0301,Oslo,03,2020-03-05,NA,NA,Norge,mild,NA,NA,2020-03-05
+Oslo,0301,Oslo,03,2020-03-05,NA,NA,Norge,mild,NA,NA,2020-03-05
+Oslo,0301,Oslo,03,2020-03-05,NA,NA,Østerrike,mild,NA,NA,2020-03-05
+Oslo,0301,Oslo,03,2020-03-05,NA,NA,Østerrike,mild,NA,NA,2020-03-05
+Færder,3811,Vestfold og Telemark,38,2020-03-05,NA,NA,Italia,mild,NA,NA,2020-03-05
+Trondheim,5001,Trøndelag,50,2020-03-05,NA,NA,Italia,mild,NA,mann,2020-03-05
+Trondheim,5001,Trøndelag,50,2020-03-05,NA,NA,Italia,mild,NA,mann,2020-03-05
+Trondheim,5001,Trøndelag,50,2020-03-05,NA,NA,Italia,mild,NA,mann,2020-03-05
+Trondheim,5001,Trøndelag,50,2020-03-05,NA,NA,Italia,mild,NA,mann,2020-03-05
+Trondheim,5001,Trøndelag,50,2020-03-05,NA,NA,Italia,mild,NA,mann,2020-03-05
+Asker,3025,Viken,30,2020-03-05,NA,NA,Norge,mild,NA,NA,2020-03-05
+Fredrikstad,3004,Viken,30,2020-03-05,NA,NA,utlandet,mild,NA,NA,2020-03-05
+Sandnes,1108,Rogaland,11,2020-03-05,NA,NA,Italia,mild,NA,kvinne,2020-03-05
+Stavanger,1103,Rogaland,11,2020-03-05,NA,NA,Italia,mild,NA,NA,2020-03-05
+Drammen,3005,Viken,30,2020-03-05,NA,NA,Italia,mild,NA,mann,2020-03-05
+Asker,3025,Viken,30,2020-03-05,NA,NA,Østerrike,mild,NA,NA,2020-03-05
+Stavanger,1103,Rogaland,11,2020-03-05,NA,NA,Italia,mild,NA,mann,2020-03-05
+Kristiansand,4204,Agder,42,2020-03-05,NA,NA,Italia,mild,NA,NA,2020-03-05
+Kristiansand,4204,Agder,42,2020-03-05,NA,NA,Italia,mild,NA,NA,2020-03-05
+Nord-Fron,3436,Innlandet,34,2020-03-04,NA,NA,utlandet,mild,NA,NA,2020-03-04
+Nord-Fron,3436,Innlandet,34,2020-03-04,NA,NA,utlandet,mild,NA,NA,2020-03-04
+Nord-Fron,3436,Innlandet,34,2020-03-04,NA,NA,utlandet,mild,NA,NA,2020-03-04
+Molde,1506,Møre og Romsdal,15,2020-03-04,NA,NA,Italia,mild,NA,NA,2020-03-04
+Oslo,0301,Oslo,03,2020-03-04,NA,NA,Italia,mild,NA,NA,2020-03-04
+Oslo,0301,Oslo,03,2020-03-04,NA,NA,Italia,mild,NA,NA,2020-03-04
+Oslo,0301,Oslo,03,2020-03-04,NA,NA,Norge,mild,NA,NA,2020-03-04
+Oslo,0301,Oslo,03,2020-03-04,NA,NA,Iran,mild,NA,NA,2020-03-04
+Haugesund,1106,Rogaland,11,2020-03-04,NA,NA,Italia,mild,NA,mann,2020-03-04
+Klepp,1120,Rogaland,11,2020-03-04,NA,NA,Italia,mild,NA,NA,2020-03-04
+Trondheim,5001,Trøndelag,50,2020-03-04,NA,NA,Italia,mild,NA,mann,2020-03-04
+Bergen,4601,Vestland,46,2020-03-04,NA,NA,Italia,mild,NA,NA,2020-03-04
+Bergen,4601,Vestland,46,2020-03-04,NA,NA,Italia,mild,NA,NA,2020-03-04
+Bergen,4601,Vestland,46,2020-03-04,NA,NA,Italia,mild,NA,NA,2020-03-04
+Bergen,4601,Vestland,46,2020-03-04,NA,NA,Italia,mild,NA,NA,2020-03-04
+Bergen,4601,Vestland,46,2020-03-04,NA,NA,Hong Kong,mild,NA,NA,2020-03-04
+Drammen,3005,Viken,30,2020-03-04,NA,NA,Italia,mild,NA,NA,2020-03-04
+Drammen,3005,Viken,30,2020-03-04,NA,NA,Italia,mild,NA,NA,2020-03-04
+Drammen,3005,Viken,30,2020-03-04,NA,NA,Italia,mild,NA,NA,2020-03-04
+Drammen,3005,Viken,30,2020-03-04,NA,NA,Italia,mild,NA,NA,2020-03-04
+Drammen,3005,Viken,30,2020-03-04,NA,NA,Italia,mild,NA,NA,2020-03-04
+Drammen,3005,Viken,30,2020-03-04,NA,NA,Italia,mild,NA,NA,2020-03-04
+Asker,3025,Viken,30,2020-03-04,NA,NA,Italia,mild,NA,NA,2020-03-04
+Stavanger,1103,Rogaland,11,2020-03-04,NA,NA,Italia,mild,NA,NA,2020-03-04
+Bærum,3024,Viken,30,2020-03-04,NA,NA,Italia,mild,NA,NA,2020-03-04
+Bærum,3024,Viken,30,2020-03-04,NA,NA,italia,mild,NA,NA,2020-03-04
+Bærum,3024,Viken,30,2020-03-04,NA,NA,ukjent,mild,NA,NA,2020-03-04
+Lier,3049,Viken,30,2020-03-04,NA,NA,Italia,mild,NA,NA,2020-03-04
+Oslo,0301,Oslo,03,2020-03-04,NA,NA,Norge,mild,NA,NA,2020-03-04
+Oslo,0301,Oslo,03,2020-03-04,NA,NA,Norge,mild,NA,NA,2020-03-04
+Oslo,0301,Oslo,03,2020-03-04,NA,NA,Norge,mild,NA,NA,2020-03-04
+Ås,3021,Viken,30,2020-03-03,NA,NA,Norge,mild,NA,NA,2020-03-03
+Drammen,3005,Viken,30,2020-03-03,NA,NA,Italia,mild,NA,NA,2020-03-03
+Drammen,3005,Viken,30,2020-03-03,NA,NA,Italia,mild,NA,NA,2020-03-03
+Tromsø,5401,Troms og Finnmark,54,2020-03-03,NA,NA,Italia,mild,NA,NA,2020-03-03
+Bergen,4601,Vestland,46,2020-03-03,NA,NA,Italia,mild,NA,NA,2020-03-03
+Bergen,4601,Vestland,46,2020-03-03,NA,NA,Italia,mild,NA,NA,2020-03-03
+Bergen,4601,Vestland,46,2020-03-03,NA,NA,Italia,mild,NA,NA,2020-03-03
+Kristiansand,4204,Agder,42,2020-03-03,NA,NA,Italia,mild,NA,NA,2020-03-03
+Bergen,4601,Vestland,46,2020-03-02,NA,NA,Italia,mild,NA,NA,2020-03-02
+Øygarden,4626,Vestland,46,2020-03-02,NA,NA,utlandet,mild,NA,NA,2020-03-02
+Øygarden,4626,Vestland,46,2020-03-02,NA,NA,utlandet,mild,NA,NA,2020-03-02
+Kristiansand,4204,Agder,42,2020-03-02,NA,NA,Italia,mild,NA,NA,2020-03-02
+Kristiansand,4204,Agder,42,2020-03-02,NA,NA,Italia,mild,NA,NA,2020-03-02
+Nes,3034,Viken,30,2020-03-01,NA,NA,Italia,mild,NA,NA,2020-03-01
+Oslo,0301,Oslo,03,2020-03-01,NA,NA,Norge,mild,NA,NA,2020-03-01
+Oslo,0301,Oslo,03,2020-03-01,NA,NA,Norge,mild,NA,NA,2020-03-01
+Oslo,0301,Oslo,03,2020-03-01,NA,NA,Norge,mild,NA,NA,2020-03-01
+Bergen,4601,Vestland,46,2020-02-29,NA,NA,Italia,mild,NA,NA,2020-02-29
+Bergen,4601,Vestland,46,2020-02-29,NA,NA,Italia,mild,NA,NA,2020-02-29
+Bergen,4601,Vestland,46,2020-02-29,NA,NA,Italia,mild,NA,NA,2020-02-29
+Bergen,4601,Vestland,46,2020-02-29,NA,NA,Italia,mild,NA,NA,2020-02-29
+Oslo,0301,Oslo,03,2020-02-29,NA,NA,Norge,mild,NA,NA,2020-02-29
+Enebakk,3028,Viken,30,2020-02-29,NA,NA,Italia,mild,NA,NA,2020-02-29
+Bergen,4601,Vestland,46,2020-02-29,NA,NA,Italia,mild,NA,NA,2020-02-29
+Enebakk,3028,Viken,30,2020-02-29,NA,NA,Italia,mild,NA,NA,2020-02-29
+Enebakk,3028,Viken,30,2020-02-29,NA,NA,Italia,mild,NA,NA,2020-02-29
+Bergen,4601,Vestland,46,2020-02-28,NA,NA,Italia,mild,NA,NA,2020-02-28
+Oslo,0301,Oslo,03,2020-02-28,NA,NA,Italia,mild,NA,NA,2020-02-28
+Oslo,0301,Oslo,03,2020-02-27,NA,1,Italia,mild,NA,NA,2020-02-27
+Oslo,0301,Oslo,03,2020-02-27,NA,NA,Italia,mild,NA,NA,2020-02-27
+Bærum,3024,Viken,30,2020-02-27,NA,NA,Iran,mild,NA,NA,2020-02-27
+Tromsø,5401,Troms og Finnmark,54,2020-02-26,NA,NA,Kina,mild,NA,kvinne,2020-02-26
